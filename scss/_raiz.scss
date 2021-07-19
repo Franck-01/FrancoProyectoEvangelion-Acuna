@@ -1,0 +1,380 @@
+#fondo{
+	.fondo{
+		background-repeat: no-repeat;
+		background-image: url("IMG/eva_fondo.png");
+		background-size: cover;
+		background-position: center;
+	}
+	.responsive{
+		width: 100%;
+		max-width: 1000px;
+		margin: auto auto;
+	}
+	.white{
+		color: white;
+		font-weight: bolder;
+		.white__titulo{
+			border: 10px dashed black;
+			padding: 15px;
+			margin: 50px;	
+			background: rgb(255,255,255);
+			background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(6,62,210,1) 44%, rgba(0,0,0,1) 100%);
+			font-size: 44px;
+		    font-family: 'Roboto', sans-serif;
+		    color: black;
+		    text-transform: uppercase;
+		    text-align: center;
+		}
+		.white__titulo:hover{
+			background: rgb(0,0,0);
+			background: radial-gradient(circle, rgba(0,0,0,1) 12%, rgba(210,6,6,1) 59%, rgba(0,0,0,0) 100%);
+			transition: all 500ms ease-out;
+			color: white;
+			border: 10px dashed white;
+		}	
+
+		.white__textos{
+			font-size: 18px;
+			font-family: 'Lato', sans-serif;
+			line-height: 1.5;
+		}
+		.white__descripcion{
+			font-size: 24px;
+			font-style: italic;
+			font-family: 'Roboto', sans-serif;
+			text-transform: uppercase;
+		}
+		.white__linksEnlaces{
+			font-size: 16px;
+		    font-family: 'Raleway', sans-serif;
+		    padding: 5px;
+			margin: 10px;
+			background: rgb(31,16,202);
+			background: radial-gradient(circle, rgba(31,16,202,1) 0%, rgba(253,45,45,0) 100%);
+			text-align: left;
+		}
+		.white__linksEnlaces:hover{
+			font-size: 16px;
+		    font-family: 'Raleway', sans-serif;
+		    padding: 5px;
+			margin: 10px;
+			text-align: left;
+			background: rgb(0,0,0);
+			background: radial-gradient(circle, rgba(0,0,0,1) 12%, rgba(210,6,6,1) 59%, rgba(0,0,0,0) 100%);
+			transition: all 500ms ease-out;
+			color: white;
+		}
+		.white__tituloNetflix{
+			font-size: 20px;			
+			font-family: 'Raleway', sans-serif;
+			font-weight: bolder;
+		}
+		.white__estilos{
+			font-size: 20px;
+		    font-family: 'Raleway', sans-serif;
+		    text-transform: uppercase;
+		    border: 10px dashed black;
+		    padding: 5px;
+			margin: 10px;
+			background: rgb(0,0,0);
+			background: radial-gradient(circle, rgba(0,0,0,1) 48%, rgba(9,6,210,0) 65%, rgba(9,6,210,1) 84%);
+			text-align: center;
+		}
+	}			
+}
+#historia{
+	.fondo{
+		background-image: url("IMG/nerv_fondo.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;	
+	}	
+	.responsive{
+		width: 100%;
+		max-width: 1000px;
+		margin: auto auto;
+	}
+	.white{
+		color: white;
+		.white__titulos{
+			border: 10px dashed none;
+		    padding: 5px;
+			margin: 10px;
+			background: rgb(0,0,0);
+			background: linear-gradient(90deg, rgba(0,0,0,1) 12%, rgba(253,29,29,1) 50%, rgba(0,0,0,1) 88%);
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.white__nervUno:hover{
+			background: rgb(0,0,0);
+			background: linear-gradient(90deg, rgba(0,0,0,1) 12%, rgba(0,31,255,1) 50%, rgba(0,0,0,1) 88%);
+			transition: all 500ms ease-out;
+		}
+		.white__textos{
+			font-size: 18px;
+			font-family: 'Lato', sans-serif;
+			line-height: 1.5;
+			font-weight: bold;
+		}
+	}
+}
+#pilotomiembro{
+	.fondo{
+		background-image: url("IMG/miembros_pilotos_fondo.gif");
+		background-position: center top;
+		background-repeat: repeat;
+		background-size: contain;
+	}
+	.responsive{
+		width: 100%;
+		max-width: 1000px;
+		margin: auto auto;
+	}
+	.cursorUno{
+		background-image: url("IMG/nerv.jpg");
+		height: 200px;
+		width: 300px;
+		.cursorUno:hover{
+		background-image: url("IMG/nerv_fondo.png");
+		height: 200px;
+		width: 300px;
+		}
+	}	
+	.cursorDos{
+		background-image: url("IMG/nerv_heads.jpg");
+		height: 200px;
+		width: 300px;
+		.cursorDos:hover{
+		background-image: url("IMG/nerv_headsUno.png");
+		height: 200px;
+		width: 300px;
+		}
+	}
+	
+@mixin miImagen($imagen){
+	background-image: url($imagen);
+}
+	.imagenNerv{
+		@include miImagen("IMG/nerv.jpg");
+		height: 200px;
+		width: 300px;
+		&:hover{
+			@extend .imagenNerv;
+			@include miImagen("IMG/nerv_fondo.png");
+		}
+	}
+	.imagenHeads{
+		@include miImagen("IMG/nerv_heads.jpg");
+		height: 200px;
+		width: 300px;
+		&:hover{
+			@extend .imagenHeads;
+			@include miImagen("IMG/nerv_headsUno.png");
+		}
+	}
+	.white{
+	color: white;
+	font-weight: bolder;
+	font-size: 20px;
+		.white__titular{
+		font-size: 24px;
+		font-family: 'Acme', sans-serif;
+		}
+		.white__fontFamily{
+		font-family: 'Covered By Your Grace', cursive;
+			.white__fontFamily--light{
+			color: lightblue;
+			}
+			.white__fontFamily--dark{
+			color: darkgreen;
+			}
+		}
+		.white__text{
+		text-align: center;
+	    font-family: 'Odibee Sans', cursive;
+		}
+	}	
+	.grid{
+		display: grid;
+		grid-template-areas: 
+		"alfa miembros echo"
+		"bravo miembrosUno foxtrot"
+		"charlie miembrosDos golf"
+		"delta miembrosTres hotel"
+		"tituloF tituloF tituloF"
+		"alfaUno pilotos deltaUno"
+		"bravoUno pilotosUno echoUno"
+		"charlieUno pilotosDos foxtrotUno";
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto auto auto;
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+		justify-content: stretch;
+		align-content: stretch;
+	}
+	.alfa{
+		grid-area: alfa;
+		justify-items: flex-end;
+	}
+	.bravo{
+		grid-area: bravo;
+		justify-items: flex-end;
+	}
+	.charlie{
+		grid-area: charlie;
+		justify-items: flex-end;
+	}
+	.delta{
+		grid-area: delta;
+		justify-items: flex-end;
+	}
+	.miembros{
+		grid-area: miembros;
+		justify-items: flex-center;
+	}
+	.miembrosUno{
+		grid-area: miembrosUno;
+		justify-items: flex-center;
+	}
+	.miembrosDos{
+		grid-area: miembrosDos;
+		justify-items: flex-center;
+	}
+	.miembrosTres{
+		grid-area: miembrosTres;
+		justify-items: flex-center;
+	}
+	.echo{
+		grid-area: echo;
+		justify-items: flex-start;
+	}
+	.foxtrot{
+		grid-area: foxtrot;
+		justify-items: flex-start;
+	}
+	.golf{
+		grid-area: golf;
+		justify-items: flex-start;
+	}
+	.hotel{
+		grid-area: hotel;
+		justify-items: flex-start;
+	}
+	.tituloF{
+		grid-area: tituloF;
+		justify-seld: center;
+	}
+	.alfaUno{
+		grid-area: alfaUno;
+		justify-items: flex-end;
+	}
+	.bravoUno{
+		grid-area: bravoUno;
+		justify-items: flex-end;
+	}
+	.charlieUno{
+		grid-area: charlieUno;
+		justify-items: flex-end;
+	}
+	.pilotos{
+		grid-area: pilotos;
+		justify-items: flex-center;
+	}
+	.pilotosUno{
+		grid-area: pilotosUno;
+		justify-items: flex-center;
+	}
+	.pilotosDos{
+		grid-area: pilotosDos;
+		justify-items: flex-center;
+	}
+	.deltaUno{
+		grid-area: deltaUno;
+		justify-items: flex-start;
+	}
+	.echoUno{
+		grid-area: echoUno;
+		justify-items: flex-start;
+	}
+	.foxtrotUno{
+		grid-area: foxtrotUno;
+		justify-items: flex-start;
+	}
+}
+#evas{
+	background-repeat: no-repeat;
+	background-image: url("IMG/evasUno_fondo.jpg");
+	background-size: cover;
+	background-position: center;
+	.responsive{
+		width: 100%;
+		max-width: 1000px;
+		margin: auto auto;
+	}
+	.marca{
+		font-weight: bolder;
+		text-align: center;
+		text-transform: uppercase;
+		.marca__titulos{
+			color: white;
+			border: 10px dashed none;
+		    padding: 5px;
+			margin: 10px;
+			background: rgb(0,0,0);
+			background: linear-gradient(90deg, rgba(0,0,0,1) 12%, rgba(253,29,29,1) 50%, rgba(0,0,0,1) 88%);
+		}
+		.marca__blue{
+			color: blue;
+		}
+		.marca__red{
+			color: red;
+		}
+		.marca__white{
+			color: white;
+		}
+	}
+	.carousel {
+  		position: center;
+	}
+}
+.detalles{
+	padding: 30px;
+	.detalles__transition{
+		transform: scale(1);
+	}
+	.detalles__transition:hover{
+		transform: scale(1.1);
+		transition: all 500ms ease-out;
+	}
+	.detalles__transform:hover{
+		transform: scale(1.1)
+	}	
+}	
+a{
+	font-size: 20px;
+    color: white;
+    padding: 5px;
+	margin: 10px;
+	text-align: right;
+	text-transform: uppercase;
+}
+a:hover{
+	font-size: 20px;
+    color: white;
+    padding: 5px;
+	margin: 10px;
+	background: rgb(0,0,0);
+	background: radial-gradient(circle, rgba(0,0,0,1) 12%, rgba(21,210,6,1) 59%, rgba(0,0,0,0) 100%);
+	text-align: right;
+	text-transform: uppercase;
+}
+@media all and (min-width: 300px){
+	.white__text{
+		color: red;
+	}
+}
+@media all and (min-width: 600px){
+	.white__text{
+		color: yellow;
+	}
+}
