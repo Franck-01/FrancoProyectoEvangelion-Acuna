@@ -399,12 +399,14 @@
 
 #shinji .responsive {
   width: 100%;
-  max-width: auto;
+  max-width: 1000px;
   margin: auto auto;
 }
 
 #shinji .white {
   color: black;
+  margin-right: 10%;
+  margin-left: 5%;
   font-size: 24px;
   font-weight: bold;
   font-family: 'Kanit', sans-serif;
@@ -432,6 +434,107 @@
   font-weight: bolder;
   font-size: 28px;
   text-align: center;
+}
+
+#angeles .fondo {
+  background-image: url("IMG/reiAngel_Dos.jpg");
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: repeat;
+}
+
+#angeles .responsive {
+  width: 100%;
+  max-width: auto;
+  margin: auto auto;
+}
+
+#angeles .angel {
+  color: black;
+  text-align: left;
+  line-height: 1.5;
+}
+
+#angeles .angel .angel__tit {
+  font-weight: bold;
+  font-family: 'Bree Serif', serif;
+  margin: 20px;
+  font-size: 26px;
+}
+
+#angeles .angel .angel__titulo {
+  border: 10px dashed black;
+  padding: 15px;
+  margin: 50px;
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  background: black;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, white 50%);
+}
+
+#angeles .angel .angel__titulo:hover {
+  transition: all 500ms ease-out;
+  color: white;
+  border: 10px dashed white;
+  background: black;
+  background: linear-gradient(90deg, black 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+#angeles .angel .angel__text {
+  margin: 40px;
+  font-size: 18px;
+  text-align: left;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+#angeles .angel .angel__descrip {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  margin: 40px;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+#angeles .angel .grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: stretch;
+  align-content: stretch;
+}
+
+#angeles .angel img {
+  height: 200px;
+  width: 300px;
+}
+
+#angeles .angel .center {
+  text-align: center;
+}
+
+.inicio {
+  font-size: 20px;
+  color: lightblue;
+  padding: 5px;
+  margin: 10px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.inicio:hover {
+  font-size: 24px;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+  text-align: right;
+  text-transform: uppercase;
+  border: 10px dashed white;
 }
 
 a {
