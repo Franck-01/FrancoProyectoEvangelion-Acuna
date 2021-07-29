@@ -134,37 +134,14 @@
   background-image: url("IMG/miembros_pilotos_fondo.gif");
   background-position: center top;
   background-repeat: repeat;
-  background-size: contain;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 #pilotomiembro .responsive {
   width: 100%;
   max-width: 1000px;
   margin: auto auto;
-}
-
-#pilotomiembro .cursorUno {
-  background-image: url("IMG/nerv.jpg");
-  height: 200px;
-  width: 300px;
-}
-
-#pilotomiembro .cursorUno .cursorUno:hover {
-  background-image: url("IMG/nerv_fondo.png");
-  height: 200px;
-  width: 300px;
-}
-
-#pilotomiembro .cursorDos {
-  background-image: url("IMG/nerv_heads.jpg");
-  height: 200px;
-  width: 300px;
-}
-
-#pilotomiembro .cursorDos .cursorDos:hover {
-  background-image: url("IMG/nerv_headsUno.png");
-  height: 200px;
-  width: 300px;
 }
 
 #pilotomiembro .imagenNerv, #pilotomiembro .imagenNerv:hover {
@@ -217,7 +194,7 @@
 
 #pilotomiembro .grid {
   display: grid;
-  grid-template-areas: "alfa miembros echo" "bravo miembrosUno foxtrot" "charlie miembrosDos golf" "delta miembrosTres hotel" "tituloF tituloF tituloF" "alfaUno pilotos deltaUno" "bravoUno pilotosUno echoUno" "charlieUno pilotosDos foxtrotUno";
+  grid-template-areas: "alfa miembros echo" "bravo miembrosUno foxtrot" "charlie miembrosDos golf" "delta miembrosTres hotel" "tituloF tituloF tituloF" "alfaUno pilotos deltaUno" "bravoUno pilotosUno echoUno" "charlieUno pilotosDos foxtrotUno" "golfUno pilotosTres hotelUno";
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
   grid-column-gap: 10px;
@@ -306,6 +283,11 @@
   justify-items: flex-end;
 }
 
+#pilotomiembro .golfUno {
+  grid-area: golfUno;
+  justify-items: flex-end;
+}
+
 #pilotomiembro .pilotos {
   grid-area: pilotos;
   justify-items: flex-center;
@@ -321,6 +303,11 @@
   justify-items: flex-center;
 }
 
+#pilotomiembro .pilotosTres {
+  grid-area: pilotosTres;
+  justify-items: flex-center;
+}
+
 #pilotomiembro .deltaUno {
   grid-area: deltaUno;
   justify-items: flex-start;
@@ -333,6 +320,11 @@
 
 #pilotomiembro .foxtrotUno {
   grid-area: foxtrotUno;
+  justify-items: flex-start;
+}
+
+#pilotomiembro .hotelUno {
+  grid-area: hotelUno;
   justify-items: flex-start;
 }
 
@@ -397,6 +389,51 @@
   transform: scale(1.1);
 }
 
+#shinji .fondo {
+  background-image: url("IMG/ShinjiIkari_fondo.jpg");
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+#shinji .responsive {
+  width: 100%;
+  max-width: auto;
+  margin: auto auto;
+}
+
+#shinji .white {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Kanit', sans-serif;
+}
+
+#shinji .white .white__encabezado {
+  text-align: center;
+}
+
+#shinji .white .white__textos {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+#shinji .white .white__textos:hover {
+  color: lightblue;
+  font-weight: bold;
+  text-align: center;
+}
+
+#shinji .white__encabezado:hover {
+  transform: scale(1.1);
+  color: white;
+  font-weight: bolder;
+  font-size: 28px;
+  text-align: center;
+}
+
 a {
   font-size: 20px;
   color: white;
@@ -407,12 +444,10 @@ a {
 }
 
 a:hover {
-  font-size: 20px;
+  font-size: 24px;
   color: white;
   padding: 5px;
   margin: 10px;
-  background: black;
-  background: radial-gradient(circle, black 12%, #15d206 59%, rgba(0, 0, 0, 0) 100%);
   text-align: right;
   text-transform: uppercase;
 }

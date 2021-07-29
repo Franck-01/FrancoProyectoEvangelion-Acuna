@@ -123,34 +123,14 @@
 		background-image: url("IMG/miembros_pilotos_fondo.gif");
 		background-position: center top;
 		background-repeat: repeat;
-		background-size: contain;
+		background-size: 100%;
+		background-attachment: fixed;
 	}
 	.responsive{
 		width: 100%;
 		max-width: 1000px;
 		margin: auto auto;
-	}
-	.cursorUno{
-		background-image: url("IMG/nerv.jpg");
-		height: 200px;
-		width: 300px;
-		.cursorUno:hover{
-		background-image: url("IMG/nerv_fondo.png");
-		height: 200px;
-		width: 300px;
-		}
 	}	
-	.cursorDos{
-		background-image: url("IMG/nerv_heads.jpg");
-		height: 200px;
-		width: 300px;
-		.cursorDos:hover{
-		background-image: url("IMG/nerv_headsUno.png");
-		height: 200px;
-		width: 300px;
-		}
-	}
-	
 @mixin miImagen($imagen){
 	background-image: url($imagen);
 }
@@ -204,7 +184,8 @@
 		"tituloF tituloF tituloF"
 		"alfaUno pilotos deltaUno"
 		"bravoUno pilotosUno echoUno"
-		"charlieUno pilotosDos foxtrotUno";
+		"charlieUno pilotosDos foxtrotUno"
+		"golfUno pilotosTres hotelUno";
 		grid-template-columns: auto auto auto;
 		grid-template-rows: auto auto auto;
 		grid-column-gap: 10px;
@@ -276,6 +257,10 @@
 		grid-area: charlieUno;
 		justify-items: flex-end;
 	}
+	.golfUno{
+		grid-area: golfUno;
+		justify-items: flex-end;
+	}
 	.pilotos{
 		grid-area: pilotos;
 		justify-items: flex-center;
@@ -288,6 +273,10 @@
 		grid-area: pilotosDos;
 		justify-items: flex-center;
 	}
+	.pilotosTres{
+		grid-area: pilotosTres;
+		justify-items: flex-center;
+	}
 	.deltaUno{
 		grid-area: deltaUno;
 		justify-items: flex-start;
@@ -298,6 +287,10 @@
 	}
 	.foxtrotUno{
 		grid-area: foxtrotUno;
+		justify-items: flex-start;
+	}
+	.hotelUno{
+		grid-area: hotelUno;
 		justify-items: flex-start;
 	}
 }
@@ -349,7 +342,47 @@
 	.detalles__transform:hover{
 		transform: scale(1.1)
 	}	
-}	
+}
+#shinji{
+	.fondo{
+		background-image: url("IMG/ShinjiIkari_fondo.jpg");
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: repeat;
+		background-attachment: fixed;	
+	}
+	.responsive{
+		width: 100%;
+		max-width: auto;
+		margin: auto auto;
+	}
+	.white{
+		color: black;
+		font-size: 24px;
+		font-weight: bold;
+		font-family: 'Kanit', sans-serif;
+		.white__encabezado{
+			text-align: center;
+		}
+		.white__textos{
+			color: black;
+			font-weight: bold;
+			text-align: center;
+		}
+		.white__textos:hover{
+			color: lightblue;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	.white__encabezado:hover{
+		transform: scale(1.1);
+		color: white;
+		font-weight: bolder;
+		font-size: 28px;
+		text-align: center;
+	}
+}		
 a{
 	font-size: 20px;
     color: white;
@@ -359,12 +392,10 @@ a{
 	text-transform: uppercase;
 }
 a:hover{
-	font-size: 20px;
+	font-size: 24px;
     color: white;
     padding: 5px;
 	margin: 10px;
-	background: rgb(0,0,0);
-	background: radial-gradient(circle, rgba(0,0,0,1) 12%, rgba(21,210,6,1) 59%, rgba(0,0,0,0) 100%);
 	text-align: right;
 	text-transform: uppercase;
 }
