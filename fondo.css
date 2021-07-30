@@ -391,10 +391,9 @@
 
 #misato .fondo {
   background-image: url("IMG/MisatoKatsugari_fondo.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: repeat;
 }
 
 #misato .responsive {
@@ -403,11 +402,46 @@
   margin: auto auto;
 }
 
+#misato .white {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Bree Serif', serif;
+}
+
+#misato .white .white__encabezado {
+  text-align: center;
+}
+
+#misato .white .white__textos {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+#misato .white .white__textos:hover {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#misato .white__encabezado:hover {
+  transform: scale(1.1);
+  color: white;
+  font-weight: bolder;
+  font-size: 26px;
+  text-align: center;
+}
+
+#misato img {
+  height: 200px;
+  width: 300px;
+}
+
 #ritsuko .fondo {
   background-image: url("IMG/RitsukoAkagi_fondo.jpg");
-  background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
@@ -417,11 +451,47 @@
   margin: auto auto;
 }
 
+#ritsuko .white {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+#ritsuko .white .white__encabezado {
+  text-align: center;
+  font-size: 24px;
+}
+
+#ritsuko .white .white__textos {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+#ritsuko .white .white__textos:hover {
+  color: yellow;
+  font-weight: bold;
+  text-align: center;
+}
+
+#ritsuko .white__encabezado:hover {
+  transform: scale(1);
+  color: white;
+  font-weight: bolder;
+  font-size: 28px;
+  text-align: center;
+}
+
+#ritsuko img {
+  height: 200px;
+  width: 300px;
+}
+
 #kaji .fondo {
   background-image: url("IMG/RyojiKaji_fondo.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
@@ -429,6 +499,43 @@
   width: 100%;
   max-width: 100%;
   margin: auto auto;
+}
+
+#kaji .white {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Cuprum', sans-serif;
+}
+
+#kaji .white .white__encabezado {
+  text-align: center;
+  font-size: 24px;
+}
+
+#kaji .white .white__textos {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+#kaji .white .white__textos:hover {
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+}
+
+#kaji .white__encabezado:hover {
+  transform: scale(1);
+  color: white;
+  font-weight: bolder;
+  font-size: 28px;
+  text-align: center;
+}
+
+#kaji img {
+  height: 200px;
+  width: 300px;
 }
 
 #gendo .fondo {
@@ -445,11 +552,47 @@
   margin: auto auto;
 }
 
+#gendo .white {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+#gendo .white .white__encabezado {
+  text-align: center;
+  font-size: 24px;
+}
+
+#gendo .white .white__textos {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+#gendo .white .white__textos:hover {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#gendo .white__encabezado:hover {
+  transform: scale(1);
+  color: white;
+  font-weight: bolder;
+  font-size: 28px;
+  text-align: center;
+}
+
+#gendo img {
+  height: 200px;
+  width: 300px;
+}
+
 #rei .fondo {
-  background-image: url("IMG/reiAngel_fondo.jpg");
-  background-attachment: fixed;
+  background-image: url("IMG/reiAngel.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
@@ -457,6 +600,42 @@
   width: 100%;
   max-width: 100%;
   margin: auto auto;
+}
+
+#rei .white {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Crete Round', serif;
+}
+
+#rei .white .white__encabezado {
+  text-align: center;
+}
+
+#rei .white .white__textos {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+#rei .white .white__textos:hover {
+  color: lightblue;
+  font-weight: bold;
+  text-align: center;
+}
+
+#rei .white__encabezado:hover {
+  transform: scale(1.1);
+  color: white;
+  font-weight: bolder;
+  font-size: 26px;
+  text-align: center;
+}
+
+#rei img {
+  height: 200px;
+  width: 300px;
 }
 
 #asuka .fondo {
@@ -471,6 +650,42 @@
   width: 100%;
   max-width: 100%;
   margin: auto auto;
+}
+
+#asuka .white {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+#asuka .white .white__encabezado {
+  text-align: center;
+}
+
+#asuka .white .white__textos {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+#asuka .white .white__textos:hover {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+#asuka .white__encabezado:hover {
+  transform: scale(1.1);
+  color: white;
+  font-weight: bolder;
+  font-size: 26px;
+  text-align: center;
+}
+
+#asuka img {
+  height: 200px;
+  width: 300px;
 }
 
 #shinji .fondo {
@@ -518,6 +733,15 @@
   text-align: center;
 }
 
+#shinji img {
+  height: 200px;
+  width: 300px;
+}
+
+#shinji .center {
+  text-align: center;
+}
+
 #kaworu .fondo {
   background-image: url("IMG/KaworuNagisa_fondo.jpg");
   background-attachment: fixed;
@@ -530,6 +754,43 @@
   width: 100%;
   max-width: 100%;
   margin: auto auto;
+}
+
+#kaworu .white {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+#kaworu .white .white__encabezado {
+  text-align: center;
+  font-size: 24px;
+}
+
+#kaworu .white .white__textos {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+#kaworu .white .white__textos:hover {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#kaworu .white__encabezado:hover {
+  transform: scale(1);
+  color: white;
+  font-weight: bolder;
+  font-size: 28px;
+  text-align: center;
+}
+
+#kaworu img {
+  height: 200px;
+  width: 300px;
 }
 
 #angeles .fondo {

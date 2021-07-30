@@ -344,44 +344,133 @@
 }
 #misato{
 	.fondo{
-		background-image: url("IMG/MisatoKatsugari_fondo.jpg");
-		background-attachment: fixed;	
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+		background-image: url("IMG/MisatoKatsugari_fondo.jpg");	
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: repeat;
 	}
 	.responsive{
 		width: 100%;
 		max-width: 100%;
 		margin: auto auto;
+	}
+	.white{
+		color: black;
+		font-size: 24px;
+		font-weight: bold;
+		font-family: 'Bree Serif', serif;
+		.white__encabezado{
+			text-align: center;
+		}
+		.white__textos{
+			color: black;
+			font-weight: bold;
+			text-align: center;
+		}
+		.white__textos:hover{
+			color: white;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	.white__encabezado:hover{
+		transform: scale(1.1);
+		color: white;
+		font-weight: bolder;
+		font-size: 26px;
+		text-align: center;
+	}
+	img{
+		height: 200px;
+		width: 300px;
 	}
 }
 #ritsuko{
 	.fondo{
-		background-image: url("IMG/RitsukoAkagi_fondo.jpg");
-		background-attachment: fixed;	
+		background-image: url("IMG/RitsukoAkagi_fondo.jpg");	
 		background-size: cover;
-		background-position: center;
+		background-position: center top;
 		background-repeat: no-repeat;
 	}
 	.responsive{
 		width: 100%;
 		max-width: 100%;
 		margin: auto auto;
+	}
+	.white{
+		color: black;
+		font-size: 24px;
+		font-weight: bold;
+		font-family: 'Hammersmith One', sans-serif;
+		.white__encabezado{
+			text-align: center;
+			font-size: 24px;
+		}
+		.white__textos{
+			color: black;
+			font-weight: bold;
+			text-align: center;
+		}
+		.white__textos:hover{
+			color: yellow;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	.white__encabezado:hover{
+		transform: scale(1.0);
+		color: white;
+		font-weight: bolder;
+		font-size: 28px;
+		text-align: center;
+	}
+	img{
+		height: 200px;
+		width: 300px;
 	}
 }
 #kaji{
 	.fondo{
-		background-image: url("IMG/RyojiKaji_fondo.jpg");
-		background-attachment: fixed;	
-		background-size: cover;
-		background-position: center;
+		background-image: url("IMG/RyojiKaji_fondo.jpg");	
+		background-size: 100%;
+		background-position: center top;
 		background-repeat: no-repeat;
 	}
 	.responsive{
 		width: 100%;
 		max-width: 100%;
 		margin: auto auto;
+	}
+	.white{
+		color: black;
+		font-size: 24px;
+		font-weight: bold;
+		font-family: 'Cuprum', sans-serif;
+		.white__encabezado{
+			text-align: center;
+			font-size: 24px;
+		}
+		.white__textos{
+			color: black;
+			font-weight: bold;
+			text-align: center;
+		}
+		.white__textos:hover{
+			color: blue;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	.white__encabezado:hover{
+		transform: scale(1.0);
+		color: white;
+		font-weight: bolder;
+		font-size: 28px;
+		text-align: center;
+	}
+	img{
+		height: 200px;
+		width: 300px;
 	}
 }
 #gendo{
@@ -397,19 +486,79 @@
 		max-width: 100%;
 		margin: auto auto;
 	}
+	.white{
+		color: black;
+		font-size: 24px;
+		font-weight: bold;
+		font-family: 'Frank Ruhl Libre', serif;
+		.white__encabezado{
+			text-align: center;
+			font-size: 24px;
+		}
+		.white__textos{
+			color: black;
+			font-weight: bold;
+			text-align: center;
+		}
+		.white__textos:hover{
+			color: white;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	.white__encabezado:hover{
+		transform: scale(1.0);
+		color: white;
+		font-weight: bolder;
+		font-size: 28px;
+		text-align: center;
+	}
+	img{
+		height: 200px;
+		width: 300px;
+	}
 }
 #rei{
 	.fondo{
-		background-image: url("IMG/reiAngel_fondo.jpg");
-		background-attachment: fixed;	
+		background-image: url("IMG/reiAngel.jpg");	
 		background-size: cover;
-		background-position: center;
+		background-position: center top;
 		background-repeat: no-repeat;
 	}
 	.responsive{
 		width: 100%;
 		max-width: 100%;
 		margin: auto auto;
+	}
+	.white{
+		color: black;
+		font-size: 24px;
+		font-weight: bold;
+		font-family: 'Crete Round', serif;
+		.white__encabezado{
+			text-align: center;
+		}
+		.white__textos{
+			color: black;
+			font-weight: bold;
+			text-align: center;
+		}
+		.white__textos:hover{
+			color: lightblue;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	.white__encabezado:hover{
+		transform: scale(1.1);
+		color: white;
+		font-weight: bolder;
+		font-size: 26px;
+		text-align: center;
+	}
+	img{
+		height: 200px;
+		width: 300px;
 	}
 }
 #asuka{
@@ -425,7 +574,38 @@
 		max-width: 100%;
 		margin: auto auto;
 	}
+	.white{
+		color: black;
+		font-size: 24px;
+		font-weight: bold;
+		font-family: 'Merriweather Sans', sans-serif;
+		.white__encabezado{
+			text-align: center;
+		}
+		.white__textos{
+			color: black;
+			font-weight: bold;
+			text-align: center;
+		}
+		.white__textos:hover{
+			color: red;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	.white__encabezado:hover{
+		transform: scale(1.1);
+		color: white;
+		font-weight: bolder;
+		font-size: 26px;
+		text-align: center;
+	}
+	img{
+		height: 200px;
+		width: 300px;
+	}
 }
+
 #shinji{
 	.fondo{
 		background-image: url("IMG/ShinjiIkari_fondo.jpg");
@@ -465,6 +645,13 @@
 		font-size: 28px;
 		text-align: center;
 	}
+	img{
+		height: 200px;
+		width: 300px;
+	}
+	.center{
+		text-align: center;
+	}
 }
 #kaworu{
 	.fondo{
@@ -478,6 +665,37 @@
 		width: 100%;
 		max-width: 100%;
 		margin: auto auto;
+	}
+	.white{
+		color: black;
+		font-size: 24px;
+		font-weight: bold;
+		font-family: 'Roboto', sans-serif;
+		.white__encabezado{
+			text-align: center;
+			font-size: 24px;
+		}
+		.white__textos{
+			color: black;
+			font-weight: bold;
+			text-align: center;
+		}
+		.white__textos:hover{
+			color: white;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	.white__encabezado:hover{
+		transform: scale(1.0);
+		color: white;
+		font-weight: bolder;
+		font-size: 28px;
+		text-align: center;
+	}
+	img{
+		height: 200px;
+		width: 300px;
 	}
 }
 #angeles{
