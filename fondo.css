@@ -389,24 +389,106 @@
   transform: scale(1.1);
 }
 
+#misato .fondo {
+  background-image: url("IMG/MisatoKatsugari_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#misato .responsive {
+  width: 100%;
+  max-width: 100%;
+  margin: auto auto;
+}
+
+#ritsuko .fondo {
+  background-image: url("IMG/RitsukoAkagi_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#ritsuko .responsive {
+  width: 100%;
+  max-width: 100%;
+  margin: auto auto;
+}
+
+#kaji .fondo {
+  background-image: url("IMG/RyojiKaji_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#kaji .responsive {
+  width: 100%;
+  max-width: 100%;
+  margin: auto auto;
+}
+
+#gendo .fondo {
+  background-image: url("IMG/SEELE_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#gendo .responsive {
+  width: 100%;
+  max-width: 100%;
+  margin: auto auto;
+}
+
+#rei .fondo {
+  background-image: url("IMG/reiAngel_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#rei .responsive {
+  width: 100%;
+  max-width: 100%;
+  margin: auto auto;
+}
+
+#asuka .fondo {
+  background-image: url("IMG/asukaSohryu_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#asuka .responsive {
+  width: 100%;
+  max-width: 100%;
+  margin: auto auto;
+}
+
 #shinji .fondo {
   background-image: url("IMG/ShinjiIkari_fondo.jpg");
-  background-size: 100%;
-  background-position: center top;
-  background-repeat: repeat;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #shinji .responsive {
   width: 100%;
-  max-width: 1000px;
+  max-width: 100%;
   margin: auto auto;
 }
 
 #shinji .white {
   color: black;
-  margin-right: 10%;
-  margin-left: 5%;
   font-size: 24px;
   font-weight: bold;
   font-family: 'Kanit', sans-serif;
@@ -434,6 +516,20 @@
   font-weight: bolder;
   font-size: 28px;
   text-align: center;
+}
+
+#kaworu .fondo {
+  background-image: url("IMG/KaworuNagisa_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#kaworu .responsive {
+  width: 100%;
+  max-width: 100%;
+  margin: auto auto;
 }
 
 #angeles .fondo {
