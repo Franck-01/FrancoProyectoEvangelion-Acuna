@@ -2,9 +2,8 @@
 	.fondo{
 		background-repeat: no-repeat;
 		background-image: url("IMG/eva_fondo.png");
-		background-position: center top;
+		background-position: center;
 		background-size: 100%;
-		background-attachment: fixed;
 	}
 	.responsive{
 		width: 100%;
@@ -86,7 +85,6 @@
 	.fondo{
 		background-image: url("IMG/nerv_fondo.png");
 		background-size: 100%;
-		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;	
 	}	
@@ -123,9 +121,8 @@
 	.fondo{
 		background-image: url("IMG/miembros_pilotos_fondo.gif");
 		background-position: center top;
-		background-repeat: repeat;
+		background-repeat: no-repeat;
 		background-size: 100%;
-		background-attachment: fixed;
 	}
 	.responsive{
 		width: 100%;
@@ -152,6 +149,15 @@
 		.white__text{
 			text-align: center;
 	    	font-family: 'Odibee Sans', cursive;
+		}
+	}
+	.flex{
+		display: flex;
+		padding: 15%;
+		flex-direction: columns; 
+		.flex div{
+			width: 10%;
+			margin: 10%;
 		}
 	}	
 	.grid{
@@ -278,7 +284,6 @@
 	background-repeat: no-repeat;
 	background-image: url("IMG/evasUno_fondo.jpg");
 	background-size: 100%;
-	background-attachment: fixed;
 	background-position: center;
 	.responsive{
 		width: 100%;
@@ -443,7 +448,6 @@
 #gendo{
 	.fondo{
 		background-image: url("IMG/SEELE_fondo.jpg");
-		background-attachment: fixed;	
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -521,7 +525,6 @@
 #asuka{
 	.fondo{
 		background-image: url("IMG/asukaSohryu_fondo.jpg");
-		background-attachment: fixed;	
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -561,7 +564,6 @@
 #shinji{
 	.fondo{
 		background-image: url("IMG/ShinjiIkari_fondo.jpg");
-		background-attachment: fixed;	
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -603,7 +605,6 @@
 #kaworu{
 	.fondo{
 		background-image: url("IMG/KaworuNagisa_fondo.jpg");
-		background-attachment: fixed;	
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
