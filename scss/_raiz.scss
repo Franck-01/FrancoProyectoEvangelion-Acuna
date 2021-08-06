@@ -3,6 +3,7 @@
 		background-repeat: no-repeat;
 		background-image: url("IMG/eva_fondo.png");
 		background-position: center top;
+		background-attachment: fixed;
 		background-size: 100%;
 	}
 	.responsive{
@@ -86,7 +87,7 @@
 		background-image: url("IMG/nerv_fondo.png");
 		background-size: 100%;
 		background-attachment: fixed;
-		background-position: center;
+		background-position: center top;
 		background-repeat: no-repeat;	
 	}	
 	.responsive{
@@ -154,15 +155,8 @@
 	    	font-family: 'Odibee Sans', cursive;
 		}
 	}
-		.flex{
-			display: flex;
-			flex-flow: row wrap;
-			padding: 10px;
-			margin: 5px;
-			text-align: center;
-			}
-		p{
-		color: yellow;
+	p{
+	color: yellow;
 	}
 }	
 #evas{
