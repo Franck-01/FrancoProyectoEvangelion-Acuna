@@ -1,7 +1,7 @@
 #fondo .fondo {
   background-repeat: no-repeat;
   background-image: url("IMG/eva_fondo.png");
-  background-position: center;
+  background-position: center top;
   background-size: 100%;
 }
 
@@ -93,6 +93,7 @@
 #historia .fondo {
   background-image: url("IMG/nerv_fondo.png");
   background-size: 100%;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -133,8 +134,9 @@
 #pilotomiembro .fondo {
   background-image: url("IMG/miembros_pilotos_fondo.gif");
   background-position: center top;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 100%;
+  background-attachment: fixed;
 }
 
 #pilotomiembro .responsive {
@@ -152,6 +154,7 @@
 #pilotomiembro .white .white__titular {
   font-size: 24px;
   font-family: 'Acme', sans-serif;
+  text-align: center;
 }
 
 #pilotomiembro .white .white__fontFamily {
@@ -173,155 +176,21 @@
 
 #pilotomiembro .flex {
   display: flex;
-  padding: 15%;
-  flex-direction: columns;
+  flex-flow: row wrap;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
 }
 
-#pilotomiembro .flex .flex div {
-  width: 10%;
-  margin: 10%;
-}
-
-#pilotomiembro .grid {
-  display: grid;
-  grid-template-areas: "alfa miembros echo" "bravo miembrosUno foxtrot" "charlie miembrosDos golf" "delta miembrosTres hotel" "tituloF tituloF tituloF" "alfaUno pilotos deltaUno" "bravoUno pilotosUno echoUno" "charlieUno pilotosDos foxtrotUno" "golfUno pilotosTres hotelUno";
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  justify-content: stretch;
-  align-content: stretch;
-}
-
-#pilotomiembro .alfa {
-  grid-area: alfa;
-  justify-items: flex-end;
-}
-
-#pilotomiembro .bravo {
-  grid-area: bravo;
-  justify-items: flex-end;
-}
-
-#pilotomiembro .charlie {
-  grid-area: charlie;
-  justify-items: flex-end;
-}
-
-#pilotomiembro .delta {
-  grid-area: delta;
-  justify-items: flex-end;
-}
-
-#pilotomiembro .miembros {
-  grid-area: miembros;
-  justify-items: flex-center;
-}
-
-#pilotomiembro .miembrosUno {
-  grid-area: miembrosUno;
-  justify-items: flex-center;
-}
-
-#pilotomiembro .miembrosDos {
-  grid-area: miembrosDos;
-  justify-items: flex-center;
-}
-
-#pilotomiembro .miembrosTres {
-  grid-area: miembrosTres;
-  justify-items: flex-center;
-}
-
-#pilotomiembro .echo {
-  grid-area: echo;
-  justify-items: flex-start;
-}
-
-#pilotomiembro .foxtrot {
-  grid-area: foxtrot;
-  justify-items: flex-start;
-}
-
-#pilotomiembro .golf {
-  grid-area: golf;
-  justify-items: flex-start;
-}
-
-#pilotomiembro .hotel {
-  grid-area: hotel;
-  justify-items: flex-start;
-}
-
-#pilotomiembro .tituloF {
-  grid-area: tituloF;
-  justify-seld: center;
-}
-
-#pilotomiembro .alfaUno {
-  grid-area: alfaUno;
-  justify-items: flex-end;
-}
-
-#pilotomiembro .bravoUno {
-  grid-area: bravoUno;
-  justify-items: flex-end;
-}
-
-#pilotomiembro .charlieUno {
-  grid-area: charlieUno;
-  justify-items: flex-end;
-}
-
-#pilotomiembro .golfUno {
-  grid-area: golfUno;
-  justify-items: flex-end;
-}
-
-#pilotomiembro .pilotos {
-  grid-area: pilotos;
-  justify-items: flex-center;
-}
-
-#pilotomiembro .pilotosUno {
-  grid-area: pilotosUno;
-  justify-items: flex-center;
-}
-
-#pilotomiembro .pilotosDos {
-  grid-area: pilotosDos;
-  justify-items: flex-center;
-}
-
-#pilotomiembro .pilotosTres {
-  grid-area: pilotosTres;
-  justify-items: flex-center;
-}
-
-#pilotomiembro .deltaUno {
-  grid-area: deltaUno;
-  justify-items: flex-start;
-}
-
-#pilotomiembro .echoUno {
-  grid-area: echoUno;
-  justify-items: flex-start;
-}
-
-#pilotomiembro .foxtrotUno {
-  grid-area: foxtrotUno;
-  justify-items: flex-start;
-}
-
-#pilotomiembro .hotelUno {
-  grid-area: hotelUno;
-  justify-items: flex-start;
+#pilotomiembro p {
+  color: yellow;
 }
 
 #evas {
   background-repeat: no-repeat;
   background-image: url("IMG/evasUno_fondo.jpg");
   background-size: 100%;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -512,6 +381,7 @@
 
 #gendo .fondo {
   background-image: url("IMG/SEELE_fondo.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -599,6 +469,7 @@
 
 #asuka .fondo {
   background-image: url("IMG/asukaSohryu_fondo.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -642,6 +513,7 @@
 
 #shinji .fondo {
   background-image: url("IMG/ShinjiIkari_fondo.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -689,6 +561,7 @@
 
 #kaworu .fondo {
   background-image: url("IMG/KaworuNagisa_fondo.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -792,6 +665,17 @@
   text-align: left;
   font-weight: bold;
   font-family: 'Shadows Into Light', cursive;
+}
+
+#angeles .angel .flex {
+  display: flex;
+  padding: 15%;
+  flex-direction: columns;
+}
+
+#angeles .angel .flex .flex div {
+  width: 10%;
+  margin: 10%;
 }
 
 #angeles .angel .grid {
