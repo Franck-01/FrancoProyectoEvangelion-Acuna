@@ -2,12 +2,13 @@
 	.fondo{
 		background-repeat: no-repeat;
 		background-image: url("IMG/eva_fondo.png");
-		background-size: cover;
-		background-position: center;
+		background-position: center top;
+		background-size: 100%;
+		background-attachment: fixed;
 	}
 	.responsive{
 		width: 100%;
-		max-width: 1000px;
+		max-width: 100%;
 		margin: auto auto;
 	}
 	.white{
@@ -84,13 +85,14 @@
 #historia{
 	.fondo{
 		background-image: url("IMG/nerv_fondo.png");
-		background-size: cover;
+		background-size: 100%;
+		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;	
 	}	
 	.responsive{
 		width: 100%;
-		max-width: 1000px;
+		max-width: 100%;
 		margin: auto auto;
 	}
 	.white{
@@ -127,50 +129,29 @@
 	}
 	.responsive{
 		width: 100%;
-		max-width: 1000px;
+		max-width: 100%;
 		margin: auto auto;
 	}	
-@mixin miImagen($imagen){
-	background-image: url($imagen);
-}
-	.imagenNerv{
-		@include miImagen("IMG/nerv.jpg");
-		height: 200px;
-		width: 300px;
-		&:hover{
-			@extend .imagenNerv;
-			@include miImagen("IMG/nerv_fondo.png");
-		}
-	}
-	.imagenHeads{
-		@include miImagen("IMG/nerv_heads.jpg");
-		height: 200px;
-		width: 300px;
-		&:hover{
-			@extend .imagenHeads;
-			@include miImagen("IMG/nerv_headsUno.png");
-		}
-	}
 	.white{
-	color: white;
-	font-weight: bolder;
-	font-size: 20px;
+		color: white;
+		font-weight: bolder;
+		font-size: 20px;
 		.white__titular{
-		font-size: 24px;
-		font-family: 'Acme', sans-serif;
+			font-size: 24px;
+			font-family: 'Acme', sans-serif;
 		}
 		.white__fontFamily{
-		font-family: 'Covered By Your Grace', cursive;
+			font-family: 'Covered By Your Grace', cursive;
 			.white__fontFamily--light{
-			color: lightblue;
+				color: lightblue;
 			}
 			.white__fontFamily--dark{
-			color: darkgreen;
+				color: darkgreen;
 			}
 		}
 		.white__text{
-		text-align: center;
-	    font-family: 'Odibee Sans', cursive;
+			text-align: center;
+	    	font-family: 'Odibee Sans', cursive;
 		}
 	}	
 	.grid{
@@ -296,11 +277,12 @@
 #evas{
 	background-repeat: no-repeat;
 	background-image: url("IMG/evasUno_fondo.jpg");
-	background-size: cover;
+	background-size: 100%;
+	background-attachment: fixed;
 	background-position: center;
 	.responsive{
 		width: 100%;
-		max-width: 1000px;
+		max-width: 100%;
 		margin: auto auto;
 	}
 	.marca{
@@ -325,7 +307,7 @@
 			color: white;
 		}
 	}
-	.carousel {
+	.carousel{
   		position: center;
 	}
 }
@@ -374,15 +356,10 @@
 		}
 	}
 	.white__encabezado:hover{
-		transform: scale(1.1);
 		color: white;
 		font-weight: bolder;
 		font-size: 26px;
 		text-align: center;
-	}
-	img{
-		height: 200px;
-		width: 300px;
 	}
 }
 #ritsuko{
@@ -418,15 +395,10 @@
 		}
 	}
 	.white__encabezado:hover{
-		transform: scale(1.0);
 		color: white;
 		font-weight: bolder;
-		font-size: 28px;
+		font-size: 26px;
 		text-align: center;
-	}
-	img{
-		height: 200px;
-		width: 300px;
 	}
 }
 #kaji{
@@ -462,15 +434,10 @@
 		}
 	}
 	.white__encabezado:hover{
-		transform: scale(1.0);
 		color: white;
 		font-weight: bolder;
-		font-size: 28px;
+		font-size: 26px;
 		text-align: center;
-	}
-	img{
-		height: 200px;
-		width: 300px;
 	}
 }
 #gendo{
@@ -507,15 +474,10 @@
 		}
 	}
 	.white__encabezado:hover{
-		transform: scale(1.0);
 		color: white;
 		font-weight: bolder;
-		font-size: 28px;
+		font-size: 26px;
 		text-align: center;
-	}
-	img{
-		height: 200px;
-		width: 300px;
 	}
 }
 #rei{
@@ -550,15 +512,10 @@
 		}
 	}
 	.white__encabezado:hover{
-		transform: scale(1.1);
 		color: white;
 		font-weight: bolder;
 		font-size: 26px;
 		text-align: center;
-	}
-	img{
-		height: 200px;
-		width: 300px;
 	}
 }
 #asuka{
@@ -594,15 +551,10 @@
 		}
 	}
 	.white__encabezado:hover{
-		transform: scale(1.1);
 		color: white;
 		font-weight: bolder;
 		font-size: 26px;
 		text-align: center;
-	}
-	img{
-		height: 200px;
-		width: 300px;
 	}
 }
 
@@ -639,15 +591,10 @@
 		}
 	}
 	.white__encabezado:hover{
-		transform: scale(1.1);
 		color: white;
 		font-weight: bolder;
-		font-size: 28px;
+		font-size: 26px;
 		text-align: center;
-	}
-	img{
-		height: 200px;
-		width: 300px;
 	}
 	.center{
 		text-align: center;
@@ -676,7 +623,7 @@
 			font-size: 24px;
 		}
 		.white__textos{
-			color: black;
+			color: white;
 			font-weight: bold;
 			text-align: center;
 		}
@@ -687,15 +634,10 @@
 		}
 	}
 	.white__encabezado:hover{
-		transform: scale(1.0);
 		color: white;
 		font-weight: bolder;
-		font-size: 28px;
+		font-size: 26px;
 		text-align: center;
-	}
-	img{
-		height: 200px;
-		width: 300px;
 	}
 }
 #angeles{
@@ -761,15 +703,15 @@
 			grid-row-gap: 10px;
 			justify-content: stretch;
 			align-content: stretch;
-		}
-		img{
-			height: 200px;
-			width: 300px;
-		}
+		}		
 		.center{
 			text-align: center;
 		}
 	}
+}
+img{
+	height: 200px;
+	width: 300px;
 }
 .inicio{
 	font-size: 20px;
@@ -780,7 +722,6 @@
 	text-transform: uppercase;
 }
 .inicio:hover{
-	font-size: 24px;
     color: white;
     padding: 5px;
 	margin: 10px;

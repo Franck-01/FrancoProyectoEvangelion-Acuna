@@ -1,13 +1,14 @@
 #fondo .fondo {
   background-repeat: no-repeat;
   background-image: url("IMG/eva_fondo.png");
-  background-size: cover;
-  background-position: center;
+  background-position: center top;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 #fondo .responsive {
   width: 100%;
-  max-width: 1000px;
+  max-width: 100%;
   margin: auto auto;
 }
 
@@ -92,14 +93,15 @@
 
 #historia .fondo {
   background-image: url("IMG/nerv_fondo.png");
-  background-size: cover;
+  background-size: 100%;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #historia .responsive {
   width: 100%;
-  max-width: 1000px;
+  max-width: 100%;
   margin: auto auto;
 }
 
@@ -140,28 +142,8 @@
 
 #pilotomiembro .responsive {
   width: 100%;
-  max-width: 1000px;
+  max-width: 100%;
   margin: auto auto;
-}
-
-#pilotomiembro .imagenNerv, #pilotomiembro .imagenNerv:hover {
-  background-image: url("IMG/nerv.jpg");
-  height: 200px;
-  width: 300px;
-}
-
-#pilotomiembro .imagenNerv:hover {
-  background-image: url("IMG/nerv_fondo.png");
-}
-
-#pilotomiembro .imagenHeads, #pilotomiembro .imagenHeads:hover {
-  background-image: url("IMG/nerv_heads.jpg");
-  height: 200px;
-  width: 300px;
-}
-
-#pilotomiembro .imagenHeads:hover {
-  background-image: url("IMG/nerv_headsUno.png");
 }
 
 #pilotomiembro .white {
@@ -331,13 +313,14 @@
 #evas {
   background-repeat: no-repeat;
   background-image: url("IMG/evasUno_fondo.jpg");
-  background-size: cover;
+  background-size: 100%;
+  background-attachment: fixed;
   background-position: center;
 }
 
 #evas .responsive {
   width: 100%;
-  max-width: 1000px;
+  max-width: 100%;
   margin: auto auto;
 }
 
@@ -426,16 +409,10 @@
 }
 
 #misato .white__encabezado:hover {
-  transform: scale(1.1);
   color: white;
   font-weight: bolder;
   font-size: 26px;
   text-align: center;
-}
-
-#misato img {
-  height: 200px;
-  width: 300px;
 }
 
 #ritsuko .fondo {
@@ -476,16 +453,10 @@
 }
 
 #ritsuko .white__encabezado:hover {
-  transform: scale(1);
   color: white;
   font-weight: bolder;
-  font-size: 28px;
+  font-size: 26px;
   text-align: center;
-}
-
-#ritsuko img {
-  height: 200px;
-  width: 300px;
 }
 
 #kaji .fondo {
@@ -526,16 +497,10 @@
 }
 
 #kaji .white__encabezado:hover {
-  transform: scale(1);
   color: white;
   font-weight: bolder;
-  font-size: 28px;
+  font-size: 26px;
   text-align: center;
-}
-
-#kaji img {
-  height: 200px;
-  width: 300px;
 }
 
 #gendo .fondo {
@@ -577,16 +542,10 @@
 }
 
 #gendo .white__encabezado:hover {
-  transform: scale(1);
   color: white;
   font-weight: bolder;
-  font-size: 28px;
+  font-size: 26px;
   text-align: center;
-}
-
-#gendo img {
-  height: 200px;
-  width: 300px;
 }
 
 #rei .fondo {
@@ -626,16 +585,10 @@
 }
 
 #rei .white__encabezado:hover {
-  transform: scale(1.1);
   color: white;
   font-weight: bolder;
   font-size: 26px;
   text-align: center;
-}
-
-#rei img {
-  height: 200px;
-  width: 300px;
 }
 
 #asuka .fondo {
@@ -676,16 +629,10 @@
 }
 
 #asuka .white__encabezado:hover {
-  transform: scale(1.1);
   color: white;
   font-weight: bolder;
   font-size: 26px;
   text-align: center;
-}
-
-#asuka img {
-  height: 200px;
-  width: 300px;
 }
 
 #shinji .fondo {
@@ -726,16 +673,10 @@
 }
 
 #shinji .white__encabezado:hover {
-  transform: scale(1.1);
   color: white;
   font-weight: bolder;
-  font-size: 28px;
+  font-size: 26px;
   text-align: center;
-}
-
-#shinji img {
-  height: 200px;
-  width: 300px;
 }
 
 #shinji .center {
@@ -769,7 +710,7 @@
 }
 
 #kaworu .white .white__textos {
-  color: black;
+  color: white;
   font-weight: bold;
   text-align: center;
 }
@@ -781,16 +722,10 @@
 }
 
 #kaworu .white__encabezado:hover {
-  transform: scale(1);
   color: white;
   font-weight: bolder;
-  font-size: 28px;
+  font-size: 26px;
   text-align: center;
-}
-
-#kaworu img {
-  height: 200px;
-  width: 300px;
 }
 
 #angeles .fondo {
@@ -866,13 +801,13 @@
   align-content: stretch;
 }
 
-#angeles .angel img {
-  height: 200px;
-  width: 300px;
-}
-
 #angeles .angel .center {
   text-align: center;
+}
+
+img {
+  height: 200px;
+  width: 300px;
 }
 
 .inicio {
@@ -885,7 +820,6 @@
 }
 
 .inicio:hover {
-  font-size: 24px;
   color: white;
   padding: 5px;
   margin: 10px;
