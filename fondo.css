@@ -1,16 +1,16 @@
-#fondo .fondo {
+#principal .fondo {
   background-repeat: no-repeat;
   background-image: url("IMG/eva_fondo.png");
   background-position: center top;
   background-size: cover;
 }
 
-#fondo .white {
+#principal .padre {
   color: white;
   font-weight: bolder;
 }
 
-#fondo .white .white__titulo {
+#principal .padre .padre__titulo {
   border: 10px dashed black;
   padding: 10px;
   margin: 6%;
@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-#fondo .white .white__titulo:hover {
+#principal .padre .padre__titulo:hover {
   background: black;
   background: radial-gradient(circle, black 12%, #d20606 59%, rgba(0, 0, 0, 0) 100%);
   transition: all 500ms ease-out;
@@ -31,48 +31,44 @@
   border: 10px dashed white;
 }
 
-#fondo .white .white__textos {
+#principal .padre .padre__textos {
   font-size: 18px;
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
 }
 
-#fondo .white .white__descripcion {
+#principal .padre .padre__descripcion {
   font-size: 24px;
   font-style: italic;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
 }
 
-#fondo .white .white__linksEnlaces {
+#principal .padre .padre__linksEnlaces {
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
   padding: 5px;
   margin: 10px;
   background: #1f10ca;
   background: radial-gradient(circle, #1f10ca 0%, rgba(253, 45, 45, 0) 100%);
-  text-align: left;
-}
-
-#fondo .white .white__linksEnlaces:hover {
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
-  padding: 5px;
-  margin: 10px;
-  text-align: left;
-  background: black;
-  background: radial-gradient(circle, black 12%, #d20606 59%, rgba(0, 0, 0, 0) 100%);
-  transition: all 500ms ease-out;
+  text-align: center;
   color: white;
 }
 
-#fondo .white .white__tituloNetflix {
+#principal .padre .padre__linksEnlaces:hover {
+  background: black;
+  background: radial-gradient(circle, black 12%, #d20606 59%, rgba(0, 0, 0, 0) 100%);
+  transition: all 500ms ease-out;
+}
+
+#principal .padre .padre__tituloNetflix {
   font-size: 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
+  text-align: center;
 }
 
-#fondo .white .white__estilos {
+#principal .padre .padre__estilos {
   font-size: 20px;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
@@ -92,11 +88,11 @@
   background-repeat: no-repeat;
 }
 
-#historia .white {
+#historia .padre {
   color: white;
 }
 
-#historia .white .white__titulos {
+#historia .padre .padre__titulos {
   border: 10px dashed none;
   padding: 5px;
   margin: 10px;
@@ -106,13 +102,13 @@
   text-transform: uppercase;
 }
 
-#historia .white .white__nervUno:hover {
+#historia .padre .padre__nervUno:hover {
   background: black;
   background: linear-gradient(90deg, black 12%, #001fff 50%, black 88%);
   transition: all 500ms ease-out;
 }
 
-#historia .white .white__textos {
+#historia .padre .padre__textos {
   font-size: 18px;
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
@@ -127,31 +123,31 @@
   background-attachment: fixed;
 }
 
-#pilotomiembro .white {
+#pilotomiembro .padre {
   color: white;
   font-weight: bolder;
   font-size: 20px;
 }
 
-#pilotomiembro .white .white__titular {
+#pilotomiembro .padre .padre__titular {
   font-size: 24px;
   font-family: 'Acme', sans-serif;
   text-align: center;
 }
 
-#pilotomiembro .white .white__fontFamily {
+#pilotomiembro .padre .padre__fontFamily {
   font-family: 'Covered By Your Grace', cursive;
 }
 
-#pilotomiembro .white .white__fontFamily .white__fontFamily--light {
+#pilotomiembro .padre .padre__fontFamily .padre__fontFamily--light {
   color: lightblue;
 }
 
-#pilotomiembro .white .white__fontFamily .white__fontFamily--dark {
+#pilotomiembro .padre .padre__fontFamily .padre__fontFamily--dark {
   color: darkgreen;
 }
 
-#pilotomiembro .white .white__text {
+#pilotomiembro .padre .padre__text {
   text-align: center;
   font-family: 'Odibee Sans', cursive;
 }
@@ -164,34 +160,42 @@
   background-repeat: no-repeat;
   background-image: url("IMG/evasUno_fondo.jpg");
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
+  background-attachment: fixed;
 }
 
-#evas .marca {
+#evas .padre {
   font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
+  padding: 1px;
+  margin: 1px;
 }
 
-#evas .marca .marca__titulos {
+#evas .padre .padre__titulos {
   color: white;
   border: 10px dashed none;
-  padding: 5px;
-  margin: 10px;
+  padding: 1px;
+  margin: 1px;
   background: black;
   background: linear-gradient(90deg, black 12%, #fd1d1d 50%, black 88%);
 }
 
-#evas .marca .marca__blue {
+#evas .padre .padre__titulos:hover {
+  background: black;
+  background: linear-gradient(90deg, black 12%, #001fff 50%, black 88%);
+  transition: all 500ms ease-out;
+}
+
+#evas .padre .padre__blue {
   color: blue;
 }
 
-#evas .marca .marca__red {
+#evas .padre .padre__red {
   color: red;
 }
 
-#evas .marca .marca__white {
+#evas .padre .padre__white {
   color: white;
 }
 
@@ -199,293 +203,13 @@
   position: center;
 }
 
-#misato .fondo {
-  background-image: url("IMG/MisatoKatsugari_fondo.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: repeat;
-  background-attachment: fixed;
+#evas .img {
+  height: 10%;
+  width: 80%;
 }
 
-#misato .white {
-  color: black;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Bree Serif', serif;
-}
-
-#misato .white .white__encabezado {
-  text-align: center;
-}
-
-#misato .white .white__textos {
-  color: black;
-  font-weight: bold;
-  text-align: center;
-}
-
-#misato .white .white__textos:hover {
-  color: white;
-  font-weight: bold;
-  text-align: center;
-}
-
-#misato .white__encabezado:hover {
-  color: white;
-  font-weight: bolder;
-  text-align: center;
-}
-
-#ritsuko .fondo {
-  background-image: url("IMG/RitsukoAkagi_fondo.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-#ritsuko .white {
-  color: black;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Hammersmith One', sans-serif;
-}
-
-#ritsuko .white .white__encabezado {
-  text-align: center;
-  font-size: 24px;
-}
-
-#ritsuko .white .white__textos {
-  color: black;
-  font-weight: bold;
-  text-align: center;
-}
-
-#ritsuko .white .white__textos:hover {
-  color: yellow;
-  font-weight: bold;
-  text-align: center;
-}
-
-#ritsuko .white__encabezado:hover {
-  color: white;
-  font-weight: bolder;
-  text-align: center;
-}
-
-#kaji .fondo {
-  background-image: url("IMG/RyojiKaji_fondo.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-#kaji .white {
-  color: black;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Cuprum', sans-serif;
-}
-
-#kaji .white .white__encabezado {
-  text-align: center;
-  font-size: 24px;
-}
-
-#kaji .white .white__textos {
-  color: black;
-  font-weight: bold;
-  text-align: center;
-}
-
-#kaji .white .white__textos:hover {
-  color: blue;
-  font-weight: bold;
-  text-align: center;
-}
-
-#kaji .white__encabezado:hover {
-  color: white;
-  font-weight: bolder;
-  text-align: center;
-}
-
-#gendo .fondo {
-  background-image: url("IMG/SEELE_fondo.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#gendo .white {
-  color: white;
-  font-size: 24px;
-  font-weight: bolder;
-  font-family: 'Frank Ruhl Libre', serif;
-}
-
-#gendo .white .white__encabezado {
-  text-align: center;
-  font-size: 24px;
-}
-
-#gendo .white .white__textos {
-  color: white;
-  font-weight: bolder;
-  text-align: center;
-}
-
-#rei .fondo {
-  background-image: url("IMG/reiAngel.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-#rei .white {
-  color: black;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Crete Round', serif;
-}
-
-#rei .white .white__encabezado {
-  text-align: center;
-}
-
-#rei .white .white__textos {
-  color: black;
-  font-weight: bold;
-  text-align: center;
-}
-
-#rei .white .white__textos:hover {
-  color: lightblue;
-  font-weight: bold;
-  text-align: center;
-}
-
-#rei .white__encabezado:hover {
-  color: white;
-  font-weight: bolder;
-  text-align: center;
-}
-
-#asuka .fondo {
-  background-image: url("IMG/asukaSohryu_fondo.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#asuka .white {
-  color: black;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Merriweather Sans', sans-serif;
-}
-
-#asuka .white .white__encabezado {
-  text-align: center;
-}
-
-#asuka .white .white__textos {
-  color: black;
-  font-weight: bold;
-  text-align: center;
-}
-
-#asuka .white .white__textos:hover {
-  color: red;
-  font-weight: bold;
-  text-align: center;
-}
-
-#asuka .white__encabezado:hover {
-  color: white;
-  font-weight: bolder;
-  text-align: center;
-}
-
-#shinji .fondo {
-  background-image: url("IMG/ShinjiIkari_fondo.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#shinji .white {
-  color: black;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Kanit', sans-serif;
-}
-
-#shinji .white .white__encabezado {
-  text-align: center;
-}
-
-#shinji .white .white__textos {
-  color: black;
-  font-weight: bold;
-  text-align: center;
-}
-
-#shinji .white .white__textos:hover {
-  color: lightblue;
-  font-weight: bold;
-  text-align: center;
-}
-
-#shinji .white__encabezado:hover {
-  color: white;
-  font-weight: bolder;
-  text-align: center;
-}
-
-#kaworu .fondo {
-  background-image: url("IMG/KaworuNagisa_fondo.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#kaworu .white {
-  padding: 7%;
-  color: black;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
-}
-
-#kaworu .white .white__encabezado {
-  text-align: center;
-  font-size: 24px;
-}
-
-#kaworu .white .white__textos {
-  color: white;
-  font-weight: bold;
-  text-align: center;
-}
-
-#kaworu .white .white__textos:hover {
-  color: white;
-  font-weight: bold;
-  text-align: center;
-}
-
-#kaworu .white__encabezado:hover {
-  color: white;
-  font-weight: bolder;
-  text-align: center;
+#evas img {
+  margin: 1%;
 }
 
 #angeles .fondo {
@@ -496,31 +220,30 @@
   background-attachment: fixed;
 }
 
-#angeles .angel {
+#angeles .padre {
   color: black;
-  text-align: left;
+  text-align: center;
   line-height: 1.5;
 }
 
-#angeles .angel .angel__tit {
+#angeles .padre .padre__tit {
   font-weight: bold;
   font-family: 'Bree Serif', serif;
   margin: 20px;
   font-size: 26px;
 }
 
-#angeles .angel .angel__titulo {
+#angeles .padre .padre__titulo {
   border: 10px dashed black;
   padding: 10px;
   margin: 6%;
   font-size: 34px;
   text-transform: uppercase;
-  text-align: center;
   background: black;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, white 50%);
 }
 
-#angeles .angel .angel__titulo:hover {
+#angeles .padre .padre__titulo:hover {
   transition: all 500ms ease-out;
   color: white;
   border: 10px dashed white;
@@ -528,23 +251,223 @@
   background: linear-gradient(90deg, black 50%, rgba(255, 255, 255, 0) 100%);
 }
 
-#angeles .angel .angel__text {
+#angeles .padre .padre__text {
   margin: 40px;
   font-size: 20px;
-  text-align: left;
   font-weight: bold;
   font-family: 'Nanum Gothic', sans-serif;
 }
 
-#angeles .angel .angel__descrip {
+#angeles .padre .padre__descrip {
   color: white;
   text-transform: uppercase;
-  text-align: center;
   font-size: 24px;
   margin: 40px;
-  text-align: left;
   font-weight: bold;
   font-family: 'Shadows Into Light', cursive;
+}
+
+#angeles .padre .padre__left {
+  text-align: left;
+}
+
+#rei .fondo {
+  background-image: url("IMG/reiAngel.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+#rei .padre {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 1px;
+  margin: 1px;
+  font-family: 'Crete Round', serif;
+  text-align: center;
+}
+
+#rei .padre .padre__encabezado:hover {
+  color: white;
+}
+
+#rei .padre .padre__textos:hover {
+  color: lightblue;
+}
+
+#asuka .fondo {
+  background-image: url("IMG/asukaSohryu_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#asuka .padre {
+  color: black;
+  font-size: 24px;
+  padding: 1px;
+  margin: 1px;
+  font-weight: bold;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: center;
+}
+
+#asuka .padre .padre__encabezado:hover {
+  color: white;
+}
+
+#asuka .padre .padre__textos:hover {
+  color: red;
+}
+
+#shinji .fondo {
+  background-image: url("IMG/ShinjiIkari_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#shinji .padre {
+  color: black;
+  font-size: 24px;
+  padding: 1px;
+  margin: 1px;
+  font-weight: bold;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+}
+
+#shinji .padre .padre__encabezado:hover {
+  color: white;
+}
+
+#shinji .padre .padre__textos:hover {
+  color: lightblue;
+}
+
+#kaworu .fondo {
+  background-image: url("IMG/KaworuNagisa_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#kaworu .padre {
+  color: black;
+  padding: 1px;
+  margin: 1px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+#kaworu .padre .padre__encabezado:hover {
+  color: white;
+}
+
+#kaworu .padre .padre__textos:hover {
+  color: white;
+}
+
+#misato .fondo {
+  background-image: url("IMG/MisatoKatsugari_fondo.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+#misato .padre {
+  color: black;
+  padding: 1px;
+  margin: 1px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+}
+
+#misato .padre .padre__encabezado:hover {
+  color: white;
+}
+
+#misato .padre .padre__textos:hover {
+  color: white;
+}
+
+#ritsuko .fondo {
+  background-image: url("IMG/RitsukoAkagi_fondo.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#ritsuko .padre {
+  color: black;
+  font-size: 24px;
+  padding: 1px;
+  margin: 1px;
+  font-weight: bold;
+  font-family: 'Hammersmith One', sans-serif;
+  text-align: center;
+}
+
+#ritsuko .padre .padre__encabezado:hover {
+  color: white;
+}
+
+#ritsuko .padre .padre__textos:hover {
+  color: yellow;
+}
+
+#kaji .fondo {
+  background-image: url("IMG/RyojiKaji_fondo.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#kaji .padre {
+  color: black;
+  font-size: 24px;
+  padding: 1px;
+  margin: 1px;
+  font-weight: bold;
+  font-family: 'Cuprum', sans-serif;
+  text-align: center;
+}
+
+#kaji .padre .padre__encabezado:hover {
+  color: white;
+}
+
+#kaji .padre .padre__textos:hover {
+  color: blue;
+}
+
+#gendo .fondo {
+  background-image: url("IMG/SEELE_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#gendo .padre {
+  color: white;
+  font-size: 24px;
+  padding: 1px;
+  margin: 1px;
+  text-align: center;
+  font-family: 'Frank Ruhl Libre', serif;
 }
 
 .flex {
@@ -601,11 +524,7 @@ img {
 
 .inicio:hover {
   color: white;
-  padding: 5px;
-  margin: 10px;
-  text-align: right;
-  text-transform: uppercase;
-  border: 10px dashed white;
+  border: 5px dashed white;
 }
 
 a {
@@ -619,11 +538,6 @@ a {
 
 a:hover {
   font-size: 24px;
-  color: white;
-  padding: 5px;
-  margin: 10px;
-  text-align: right;
-  text-transform: uppercase;
 }
 
 @media all and (min-width: 300px) {

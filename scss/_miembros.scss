@@ -1,0 +1,89 @@
+#misato{
+	.fondo{
+		background-image: url("IMG/MisatoKatsugari_fondo.jpg");	
+		background-size: cover;
+		background-position: center top;
+		background-repeat: repeat;
+		background-attachment: fixed;
+	}
+	.padre{
+		color: black;
+		padding: 1px;
+  		margin: 1px;
+		font-size: 24px;
+		font-weight: bold;
+		font-family: 'Bree Serif', serif;
+		text-align: center;
+		.padre__encabezado:hover{
+			color: white;
+		}
+		.padre__textos:hover{
+			color: white;	
+		}
+	}
+}
+#ritsuko{
+	.fondo{
+		background-image: url("IMG/RitsukoAkagi_fondo.jpg");	
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	.padre{
+		color: black;
+		font-size: 24px;
+		padding: 1px;
+  		margin: 1px;
+		font-weight: bold;
+		font-family: 'Hammersmith One', sans-serif;
+		text-align: center;
+		.padre__encabezado:hover{
+			color: white;
+		}
+		.padre__textos:hover{
+			color: yellow;		
+		}
+	}
+}
+#kaji{
+	.fondo{
+		background-image: url("IMG/RyojiKaji_fondo.jpg");	
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	.padre{
+		color: black;
+		font-size: 24px;
+		padding: 1px;
+  		margin: 1px;
+		font-weight: bold;
+		font-family: 'Cuprum', sans-serif;
+		text-align: center;
+		.padre__encabezado:hover{
+			color: white;
+		}
+		.padre__textos:hover{
+			color: blue;
+		}
+	}
+}
+#gendo{
+	.fondo{
+		background-image: url("IMG/SEELE_fondo.jpg");
+		background-attachment: fixed;	
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.padre{
+		color: white;
+		font-size: 24px;
+		padding: 1px;
+  		margin: 1px;
+  		text-align: center;
+		font-family: 'Frank Ruhl Libre', serif;
+	}
+}

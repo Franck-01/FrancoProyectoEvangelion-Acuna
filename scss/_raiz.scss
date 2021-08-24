@@ -1,14 +1,14 @@
-#fondo{
+#principal{
 	.fondo{
 		background-repeat: no-repeat;
 		background-image: url("IMG/eva_fondo.png");
 		background-position: center top;
 		background-size: cover;
 	}
-	.white{
+	.padre{
 		color: white;
 		font-weight: bolder;
-		.white__titulo{
+		.padre__titulo{
 			border: 10px dashed black;
 			padding: 10px;
 			margin: 6%;	
@@ -20,50 +20,46 @@
 		    text-transform: uppercase;
 		    text-align: center;
 		}
-		.white__titulo:hover{
+		.padre__titulo:hover{
 			background: rgb(0,0,0);
 			background: radial-gradient(circle, rgba(0,0,0,1) 12%, rgba(210,6,6,1) 59%, rgba(0,0,0,0) 100%);
 			transition: all 500ms ease-out;
 			color: white;
 			border: 10px dashed white;
 		}	
-		.white__textos{
+		.padre__textos{
 			font-size: 18px;
 			font-family: 'Lato', sans-serif;
 			line-height: 1.5;
 		}
-		.white__descripcion{
+		.padre__descripcion{
 			font-size: 24px;
 			font-style: italic;
 			font-family: 'Roboto', sans-serif;
 			text-transform: uppercase;
 		}
-		.white__linksEnlaces{
+		.padre__linksEnlaces{
 			font-size: 16px;
 		    font-family: 'Raleway', sans-serif;
 		    padding: 5px;
 			margin: 10px;
 			background: rgb(31,16,202);
 			background: radial-gradient(circle, rgba(31,16,202,1) 0%, rgba(253,45,45,0) 100%);
-			text-align: left;
+			text-align: center;
+			color: white;
 		}
-		.white__linksEnlaces:hover{
-			font-size: 16px;
-		    font-family: 'Raleway', sans-serif;
-		    padding: 5px;
-			margin: 10px;
-			text-align: left;
+		.padre__linksEnlaces:hover{
 			background: rgb(0,0,0);
 			background: radial-gradient(circle, rgba(0,0,0,1) 12%, rgba(210,6,6,1) 59%, rgba(0,0,0,0) 100%);
 			transition: all 500ms ease-out;
-			color: white;
 		}
-		.white__tituloNetflix{
+		.padre__tituloNetflix{
 			font-size: 20px;			
 			font-family: 'Raleway', sans-serif;
 			font-weight: bolder;
+			text-align: center;
 		}
-		.white__estilos{
+		.padre__estilos{
 			font-size: 20px;
 		    font-family: 'Raleway', sans-serif;
 		    text-transform: uppercase;
@@ -84,9 +80,9 @@
 		background-position: center top;
 		background-repeat: no-repeat;	
 	}
-	.white{
+	.padre{
 		color: white;
-		.white__titulos{
+		.padre__titulos{
 			border: 10px dashed none;
 		    padding: 5px;
 			margin: 10px;
@@ -95,12 +91,12 @@
 			text-align: center;
 			text-transform: uppercase;
 		}
-		.white__nervUno:hover{
+		.padre__nervUno:hover{
 			background: rgb(0,0,0);
 			background: linear-gradient(90deg, rgba(0,0,0,1) 12%, rgba(0,31,255,1) 50%, rgba(0,0,0,1) 88%);
 			transition: all 500ms ease-out;
 		}
-		.white__textos{
+		.padre__textos{
 			font-size: 18px;
 			font-family: 'Lato', sans-serif;
 			line-height: 1.5;
@@ -116,25 +112,25 @@
 		background-size: cover;
 		background-attachment: fixed;
 	}	
-	.white{
+	.padre{
 		color: white;
 		font-weight: bolder;
 		font-size: 20px;
-		.white__titular{
+		.padre__titular{
 			font-size: 24px;
 			font-family: 'Acme', sans-serif;
 			text-align: center;
 		}
-		.white__fontFamily{
+		.padre__fontFamily{
 			font-family: 'Covered By Your Grace', cursive;
-			.white__fontFamily--light{
+			.padre__fontFamily--light{
 				color: lightblue;
 			}
-			.white__fontFamily--dark{
+			.padre__fontFamily--dark{
 				color: darkgreen;
 			}
 		}
-		.white__text{
+		.padre__text{
 			text-align: center;
 	    	font-family: 'Odibee Sans', cursive;
 		}
@@ -148,292 +144,47 @@
 		background-repeat: no-repeat;
 		background-image: url("IMG/evasUno_fondo.jpg");
 		background-size: cover;
-		background-attachment: fixed;
-		background-position: center;		
+		background-position: center;
+		background-attachment: fixed;	
 	}
-	.marca{
+	.padre{
 		font-weight: bolder;
 		text-align: center;
 		text-transform: uppercase;
-		.marca__titulos{
+		padding: 1px;
+  		margin: 1px;
+		.padre__titulos{
 			color: white;
 			border: 10px dashed none;
-		    padding: 5px;
-			margin: 10px;
+		    padding: 1px;
+			margin: 1px;
 			background: rgb(0,0,0);
 			background: linear-gradient(90deg, rgba(0,0,0,1) 12%, rgba(253,29,29,1) 50%, rgba(0,0,0,1) 88%);
 		}
-		.marca__blue{
+		.padre__titulos:hover{
+			background: rgb(0,0,0);
+			background: linear-gradient(90deg, rgba(0,0,0,1) 12%, rgba(0,31,255,1) 50%, rgba(0,0,0,1) 88%);
+			transition: all 500ms ease-out;
+		}
+		.padre__blue{
 			color: blue;
 		}
-		.marca__red{
+		.padre__red{
 			color: red;
 		}
-		.marca__white{
+		.padre__white{
 			color: white;
 		}
 	}
 	.carousel{
   		position: center;
 	}
-}
-#misato{
-	.fondo{
-		background-image: url("IMG/MisatoKatsugari_fondo.jpg");	
-		background-size: cover;
-		background-position: center top;
-		background-repeat: repeat;
-		background-attachment: fixed;
+	.img{
+		height: 10%;
+  		width: 80%;
 	}
-	.white{
-		color: black;
-		font-size: 24px;
-		font-weight: bold;
-		font-family: 'Bree Serif', serif;
-		.white__encabezado{
-			text-align: center;
-		}
-		.white__textos{
-			color: black;
-			font-weight: bold;
-			text-align: center;
-		}
-		.white__textos:hover{
-			color: white;
-			font-weight: bold;
-			text-align: center;
-		}
-	}
-	.white__encabezado:hover{
-		color: white;
-		font-weight: bolder;
-		text-align: center;
-	}
-}
-#ritsuko{
-	.fondo{
-		background-image: url("IMG/RitsukoAkagi_fondo.jpg");	
-		background-size: cover;
-		background-position: center top;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-	}
-	.white{
-		color: black;
-		font-size: 24px;
-		font-weight: bold;
-		font-family: 'Hammersmith One', sans-serif;
-		.white__encabezado{
-			text-align: center;
-			font-size: 24px;
-		}
-		.white__textos{
-			color: black;
-			font-weight: bold;
-			text-align: center;
-		}
-		.white__textos:hover{
-			color: yellow;
-			font-weight: bold;
-			text-align: center;
-		}
-	}
-	.white__encabezado:hover{
-		color: white;
-		font-weight: bolder;
-		text-align: center;
-	}
-}
-#kaji{
-	.fondo{
-		background-image: url("IMG/RyojiKaji_fondo.jpg");	
-		background-size: cover;
-		background-position: center top;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-	}
-	.white{
-		color: black;
-		font-size: 24px;
-		font-weight: bold;
-		font-family: 'Cuprum', sans-serif;
-		.white__encabezado{
-			text-align: center;
-			font-size: 24px;
-		}
-		.white__textos{
-			color: black;
-			font-weight: bold;
-			text-align: center;
-		}
-		.white__textos:hover{
-			color: blue;
-			font-weight: bold;
-			text-align: center;
-		}
-	}
-	.white__encabezado:hover{
-		color: white;
-		font-weight: bolder;
-		text-align: center;
-	}
-}
-#gendo{
-	.fondo{
-		background-image: url("IMG/SEELE_fondo.jpg");
-		background-attachment: fixed;	
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-	.white{
-		color: white;
-		font-size: 24px;
-		font-weight: bolder;
-		font-family: 'Frank Ruhl Libre', serif;
-		.white__encabezado{
-			text-align: center;
-			font-size: 24px;
-		}
-		.white__textos{
-			color: white;
-			font-weight: bolder;
-			text-align: center;
-		}
-	}
-}
-#rei{
-	.fondo{
-		background-image: url("IMG/reiAngel.jpg");	
-		background-size: cover;
-		background-position: center top;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-	}
-	.white{
-		color: black;
-		font-size: 24px;
-		font-weight: bold;
-		font-family: 'Crete Round', serif;
-		.white__encabezado{
-			text-align: center;
-		}
-		.white__textos{
-			color: black;
-			font-weight: bold;
-			text-align: center;
-		}
-		.white__textos:hover{
-			color: lightblue;
-			font-weight: bold;
-			text-align: center;
-		}
-	}
-	.white__encabezado:hover{
-		color: white;
-		font-weight: bolder;
-		text-align: center;
-	}
-}
-#asuka{
-	.fondo{
-		background-image: url("IMG/asukaSohryu_fondo.jpg");
-		background-attachment: fixed;	
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-	.white{
-		color: black;
-		font-size: 24px;
-		font-weight: bold;
-		font-family: 'Merriweather Sans', sans-serif;
-		.white__encabezado{
-			text-align: center;
-		}
-		.white__textos{
-			color: black;
-			font-weight: bold;
-			text-align: center;
-		}
-		.white__textos:hover{
-			color: red;
-			font-weight: bold;
-			text-align: center;
-		}
-	}
-	.white__encabezado:hover{
-		color: white;
-		font-weight: bolder;
-		text-align: center;
-	}
-}
-#shinji{
-	.fondo{
-		background-image: url("IMG/ShinjiIkari_fondo.jpg");
-		background-attachment: fixed;	
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}		
-	.white{
-		color: black;
-		font-size: 24px;
-		font-weight: bold;
-		font-family: 'Kanit', sans-serif;
-		.white__encabezado{
-			text-align: center;
-		}
-		.white__textos{
-			color: black;
-			font-weight: bold;
-			text-align: center;
-		}
-		.white__textos:hover{
-			color: lightblue;
-			font-weight: bold;
-			text-align: center;
-		}
-	}
-	.white__encabezado:hover{
-		color: white;
-		font-weight: bolder;
-		text-align: center;
-	}
-}
-#kaworu{
-	.fondo{
-		background-image: url("IMG/KaworuNagisa_fondo.jpg");
-		background-attachment: fixed;	
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-	.white{
-		padding: 7%;
-		color: black;
-		font-size: 24px;
-		font-weight: bold;
-		font-family: 'Roboto', sans-serif;
-		.white__encabezado{
-			text-align: center;
-			font-size: 24px;
-		}
-		.white__textos{
-			color: white;
-			font-weight: bold;
-			text-align: center;
-		}
-		.white__textos:hover{
-			color: white;
-			font-weight: bold;
-			text-align: center;
-		}
-	}
-	.white__encabezado:hover{
-		color: white;
-		font-weight: bolder;
-		text-align: center;
+	img{
+		margin: 1%;
 	}
 }
 #angeles{
@@ -444,125 +195,48 @@
 		background-repeat: repeat;
 		background-attachment: fixed;	
 	}
-	.angel{
+	.padre{
 		color: black;
-		text-align: left;
+		text-align: center;
 		line-height: 1.5;
-		.angel__tit{
+		.padre__tit{
 			font-weight: bold;
 			font-family: 'Bree Serif', serif;
 			margin: 20px;
 			font-size: 26px;
 		}
-		.angel__titulo{
+		.padre__titulo{
 			border: 10px dashed black;
 			padding: 10px;
 			margin: 6%;	
 			font-size: 34px;
 		    text-transform: uppercase;
-		    text-align: center;
 		    background: rgb(0,0,0);
 			background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 50%);
 		}
-		.angel__titulo:hover{
+		.padre__titulo:hover{
 			transition: all 500ms ease-out;
 			color: white;
 			border: 10px dashed white;
 			background: rgb(0,0,0);
 			background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(255,255,255,0) 100%);
 		}
-		.angel__text{
+		.padre__text{
 			margin: 40px;
 			font-size: 20px;
-			text-align: left;
 			font-weight: bold;
 			font-family: 'Nanum Gothic', sans-serif;
 		}
-		.angel__descrip{
+		.padre__descrip{
 			color: white;
 		    text-transform: uppercase;
-		    text-align: center;
 			font-size: 24px;
 			margin: 40px;
-			text-align: left;
 			font-weight: bold;
 			font-family: 'Shadows Into Light', cursive;
-		}		
-	}
-}
-.flex{
-	display: flex;
-	padding: 10%;
-	flex-wrap: wrap;
-	.flex div{
-		width: 3%;
-		margin: 6%;
-	}
-}
-.responsive{
-	width: 100%;
-	max-width: 100%;
-	margin: auto auto;
-}
-.detalles{
-	padding: 30px;
-	.detalles__transition{
-		transform: scale(1);
-	}
-	.detalles__transition:hover{
-		transform: scale(1.1);
-		transition: all 500ms ease-out;
-	}
-	.detalles__transform:hover{
-		transform: scale(1.1)
-	}	
-}
-.center{
-	text-align: center;
-}
-img{
-	height: 170px;
-	width: 270px;
-}
-.inicio{
-	font-size: 20px;
-    color: lightblue;
-    padding: 5px;
-	margin: 10px;
-	text-align: right;
-	text-transform: uppercase;
-}
-.inicio:hover{
-    color: white;
-    padding: 5px;
-	margin: 10px;
-	text-align: right;
-	text-transform: uppercase;
-	border: 10px dashed white;
-}
-a{
-	font-size: 20px;
-    color: white;
-    padding: 5px;
-	margin: 10px;
-	text-align: right;
-	text-transform: uppercase;
-}
-a:hover{
-	font-size: 24px;
-    color: white;
-    padding: 5px;
-	margin: 10px;
-	text-align: right;
-	text-transform: uppercase;
-}
-@media all and (min-width: 300px){
-	.white__text{
-		color: red;
-	}
-}
-@media all and (min-width: 600px){
-	.white__text{
-		color: yellow;
+		}
+		.padre__left{
+			text-align: left;
+		}	
 	}
 }
