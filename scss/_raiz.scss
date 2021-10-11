@@ -70,7 +70,74 @@
 			background: radial-gradient(circle, rgba(0,0,0,1) 48%, rgba(9,6,210,0) 65%, rgba(9,6,210,1) 84%);
 			text-align: center;
 		}
-	}			
+	}
+	.modalC{
+		height: 100vh;
+		width: 100vw;
+		background-color: rgba(0, 0, 0, 0.3);
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.5s ease-in;
+		color: black;
+		.modalC__fondo{
+			background-image: url("IMG/hideakianno-fondo.jpg");
+			background-size: cover;
+			background-position: center top;
+			background-repeat: no-repeat;
+			width: 38%;
+			height: 95%;
+			border-radius: 25px;
+			text-align: center;
+			padding: 22px;
+		}
+		.modalC__titulo{
+			background: rgb(255,0,0);
+			background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(235,229,21,1) 49%, rgba(0,202,255,1) 100%);
+			font-size: 20px;
+			font-style: italic;
+			font-family: 'Roboto', sans-serif;
+			text-transform: uppercase;
+			font-weight: bolder;
+			border: 10px dashed black;
+		    padding: 5px;
+			margin: 10px;
+		}
+		.modalC__info{
+			font-size: 18px;
+		    font-family: 'Raleway', sans-serif;
+			font-weight: bolder;
+		}
+		.modalC__info:hover{
+			color: white;
+			font-weight: bolder;
+		}
+	}
+	.modal-active{
+		visibility: visible;
+		opacity: 1;
+	}
+	.imagen{
+		height: 35%;
+		width: 270px;
+	}
+	.adicional{
+		background-image: url("IMG/HideakiAnno_fondo.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		text-align: center;
+		padding: 22px;
+		font-size: 20px;
+		font-style: italic;
+		text-transform: uppercase;
+		font-weight: bolder;
+	}
 }
 #historia{
 	.fondo{
@@ -114,7 +181,6 @@
 	}	
 	.padre{
 		color: white;
-		font-weight: bolder;
 		font-size: 20px;
 		.padre__titular{
 			font-size: 24px;
@@ -122,21 +188,35 @@
 			text-align: center;
 		}
 		.padre__fontFamily{
-			font-family: 'Covered By Your Grace', cursive;
+			text-align: center;
+			font-family: 'Acme', sans-serif;
 			.padre__fontFamily--light{
 				color: lightblue;
+				text-align: center;
 			}
 			.padre__fontFamily--dark{
 				color: darkgreen;
+				text-align: center;
 			}
 		}
 		.padre__text{
 			text-align: center;
-	    	font-family: 'Odibee Sans', cursive;
+			font-family: 'Covered By Your Grace', cursive;
+			color: yellow;
 		}
 	}
-	p{
-	color: yellow;
+	.adicional{
+		background-image: url("IMG/Mari.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		text-align: center;
+		padding: 22px;
+		font-size: 20px;
+		font-style: italic;
+		text-transform: uppercase;
+		font-weight: bolder;
+		color: #d70fef;
 	}
 }	
 #evas{
