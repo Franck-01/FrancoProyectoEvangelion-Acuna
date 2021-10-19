@@ -8,185 +8,188 @@
 	<link href="https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Covered+By+Your+Grace&family=Crete+Round&family=Cuprum&family=Frank+Ruhl+Libre&family=Hammersmith+One&family=Kanit:wght@200&family=Merriweather+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<script defer src="../JS/clase9_2_Acuña.js">JavaScript</script>
-</head>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body id="pilotomiembro">
-<div class="padre fondo">
-	<div class="responsive detalles">
-		<nav class="navbar navbar-expand-lg">
-  		<h4><a class="navbar-brand detalles__transition inicio" href="../index.html">Inicio</a></h4>
-      </nav>
-            <div class="container row detalles__transition">
-                <div class="col">
-                	<img src="../IMG/nerv.jpg">
-                	<h3 class="padre__titular">Miembros y Pilotos</h3>
-                </div>
-                <div class="col">
-                	<img src="../IMG/nerv_heads.jpg">
-                	<h4 class="padre__titular">Miembros</h4>
-                </div>
-            </div>
-		<section class="padre__fontFamily">
-			<div class="padre__fontFamily--light">
-				<img src="../IMG/misatoKatsugari.jpg" alt="Misato" width="200px" height="300px">
-				<h5>"Actuar es mucho mejor que esperar un milagro"<h5>
-				<h4>Misato Katsuragi</h4>
-				<p class="padre__text">Ella está al mando de las operaciones tácticas en la organización NERV, siendo responsable de coordinar las Unidades Evangelion en combate contra los ángeles, ocupando el cargo de capitán. Más tarde es ascendida al rango de mayor.
-				Es la hija del Dr. Katsuragi y la única sobreviviente del Segundo Impacto.</p>
-				<input id="modal-abrir" type="button" value="Misato Katsugari" onclick="misato();" />
-				<div class="misato responsive">
-					<div class="misato__fondo">
-						<h2 class="misato__titulo">Misato Katsuragi</h2>
-						<a href="../PAG/Misato_Katsuragi.html"><img src="../IMG/Misato-S.jpg" alt="Misato"></a>
-						<p class="misato__titulo">Misato Katsuragi- (Evangelion 3.0+1.0)</p>
-							<p class="misato__titulo__info">Lider de WILE, encargada de destruir lo poco que queda de NERV</p>
-							<p class="misato__titulo__info">Esposa de Ryoji Kaji, madre de Ryoji Kaji(el hijo que lleva el mismo nombre que su padre)</p>
-							<p class="misato__titulo__info">Frase con la que justifica el que Shinji vuelva a pilotar; "El fue quien nos salvo, hace 14 años. Si no fuera por él, todos hubieras muerto"</p>
-						<input id="modal-cerrar" type="button" value="cerrar">
-					</div>
-				</div>
-			<div class="padre__fontFamily--light">
-				<img src="../IMG/ritsukoAkagi.jpg" alt="Ritsuko" width="200px" height="300px">
-				<h5>"¿Has oído la historia del "Dilema del Erizo"? Aun cuando quieren calentarse entre ellos, mientras más se acercan, más daño se hacen. Con las personas pasa lo mismo"</h5>		
-				<h4>Ritsuko Akagi</h4>
-				<p class="padre__text">Es la principal científica de NERV, siendo la jefa del Departamento de Desarrollo Tecnológico y responsable directa de todo lo relativo con las Unidades Evangelion.
-				Ella es la hija de Naoko Akagi, creadora del sistema MAGI que controla NERV. Dicho sistema está compuesto por tres supercomputadoras (Melchor, Gaspar y Baltasar) que ejecutan todas las operaciones de NERV basándose en una estructura democrática.</p>
-				<input id="modal-open" type="button" value="Ritsuko Akagi" onclick="ritsuko();" />
-				<div class="ritsuko responsive">
-					<div class="ritsuko__fondo">
-						<h2 class="ritsuko__titulo">Ritsuko Akagi</h2>
-						<a href="../PAG/Ritsuko_Akagi.html"><img src="../IMG/Ritsuko-S.jpg" alt="Ritsuko"></a>
-						<p class="ritsuko__titulo">Ritsuko Akagi- (Evangelion 3.0+1.0)</p>
-							<p class="ritsuko__titulo__info">Es la Vice-Comandante de WILE, la subordinada directa de Misato Katsuragi</p>
-							<p class="ritsuko__titulo__info">Cientifica jefe, encargada de restaurar el ambiente de la tierra para que sea habitable</p>
-							<p class="ritsuko__titulo__info">Frase que le dice a Gendo tras dispararle; "no me detengo hasta cumplir mi objetivo, como usted"</p>
-						<input id="modal-close" type="button" value="cerrar">
-					</div>
+<div class="padre fondo responsive detalles">
+	<nav class="navbar navbar-expand-lg">
+	<h4><a class="navbar-brand detalles__transition inicio" href="../index.html">Inicio</a></h4>
+	</nav>
+		<div class="container row detalles__transition">
+			<div class="col">
+				<img src="../IMG/nerv.jpg">
+				<h3 class="padre__titular">Miembros y Pilotos</h3>
+			</div>
+			<div class="col">
+				<img src="../IMG/nerv_heads.jpg">
+				<h4 class="padre__titular">Miembros</h4>
+			</div>
+		</div>
+	<section class="padre__fontFamily">
+		<div class="padre__fontFamily--light">
+			<img src="../IMG/misatoKatsugari.jpg" alt="Misato" width="200px" height="300px">
+			<h5>"Actuar es mucho mejor que esperar un milagro"<h5>
+			<h4>Misato Katsuragi</h4>
+			<p class="padre__text">Ella está al mando de las operaciones tácticas en la organización NERV, siendo responsable de coordinar las Unidades Evangelion en combate contra los ángeles, ocupando el cargo de capitán. Más tarde es ascendida al rango de mayor.
+			Es la hija del Dr. Katsuragi y la única sobreviviente del Segundo Impacto.</p>
+			<input id="modal-abrir" type="button" value="Misato Katsugari" onclick="misato();" />
+			<div class="misato responsive">
+				<div class="misato__fondo">
+					<h2 class="misato__titulo">Misato Katsuragi</h2>
+					<a href="../PAG/Misato_Katsuragi.html"><img src="../IMG/Misato-S.jpg" alt="Misato"></a>
+					<p class="misato__titulo">Misato Katsuragi- (Evangelion 3.0+1.0)</p>
+						<p class="misato__titulo__info">Lider de WILE, encargada de destruir lo poco que queda de NERV</p>
+						<p class="misato__titulo__info">Esposa de Ryoji Kaji, madre de Ryoji Kaji(el hijo que lleva el mismo nombre que su padre)</p>
+						<p class="misato__titulo__info">Frase con la que justifica el que Shinji vuelva a pilotar; "El fue quien nos salvo, hace 14 años. Si no fuera por él, todos hubieras muerto"</p>
+					<input id="modal-cerrar" type="button" value="cerrar">
 				</div>
 			</div>
-			<div class="padre__fontFamily--light">
-				<img src="../IMG/ryojiKaji.jpg" alt="Kaji" width="200px" height="300px">
-				<h5>"Ahora hay algo que tú puedes hacer, algo que desgraciadamente sólo puedes hacer tú"</h5>
-				<h4>Ryoji Kaji</h4>
-				<p class="padre__text">Parece ser un triple agente, que trabaja como inspector especial para NERV, pero secretamente realiza una investigación detallada sobre la organización, cumpliendo la peligrosa tarea de espía encubierto.</p>
-				<input id="kaji-open" type="button" value="Ryoji Kaji" onclick="kaji();" />
-				<div class="kaji responsive">
-					<div class="kaji__fondo">
-						<h2 class="kaji__titulo">Ryoji Kaji</h2>
-						<a href="../PAG/Ryoji_Kaji.html"><img src="../IMG/ryojiKaji-S.png" alt="Kaji"></a>
-						<p class="kaji__titulo">Ryoji Kaji- (Evangelion 3.0+1.0)</p>
-							<p class="kaji__titulo__info">..."para detener el Tercer Impacto alguien devia sacrificarse"...</p>
-							<p class="kaji__titulo__info">Esposo de Misato, padre de Ryoji Kaji</p>
-							<p class="kaji__titulo__info">Frase que le dice a Misato antes de partir; "Misato... ahora dejo todo en tus manos"</p>
-						<input id="kaji-close" type="button" value="cerrar">
-					</div>
+		<div class="padre__fontFamily--light">
+			<img src="../IMG/ritsukoAkagi.jpg" alt="Ritsuko" width="200px" height="300px">
+			<h5>"¿Has oído la historia del "Dilema del Erizo"? Aun cuando quieren calentarse entre ellos, mientras más se acercan, más daño se hacen. Con las personas pasa lo mismo"</h5>		
+			<h4>Ritsuko Akagi</h4>
+			<p class="padre__text">Es la principal científica de NERV, siendo la jefa del Departamento de Desarrollo Tecnológico y responsable directa de todo lo relativo con las Unidades Evangelion.
+			Ella es la hija de Naoko Akagi, creadora del sistema MAGI que controla NERV. Dicho sistema está compuesto por tres supercomputadoras (Melchor, Gaspar y Baltasar) que ejecutan todas las operaciones de NERV basándose en una estructura democrática.</p>
+			<input id="modal-open" type="button" value="Ritsuko Akagi" onclick="ritsuko();" />
+			<div class="ritsuko responsive">
+				<div class="ritsuko__fondo">
+					<h2 class="ritsuko__titulo">Ritsuko Akagi</h2>
+					<a href="../PAG/Ritsuko_Akagi.html"><img src="../IMG/ritsuko-S.jpg" alt="Ritsuko"></a>
+					<p class="ritsuko__titulo">Ritsuko Akagi- (Evangelion 3.0+1.0)</p>
+						<p class="ritsuko__titulo__info">Es la Vice-Comandante de WILE, la subordinada directa de Misato Katsuragi</p>
+						<p class="ritsuko__titulo__info">Cientifica jefe, encargada de restaurar el ambiente de la tierra para que sea habitable</p>
+						<p class="ritsuko__titulo__info">Frase que le dice a Gendo tras dispararle; "no me detengo hasta cumplir mi objetivo, como usted"</p>
+					<input id="modal-close" type="button" value="cerrar">
 				</div>
 			</div>
-			<div class="padre__fontFamily--light">
-				<img src="../IMG/gendoIkari.jpg" alt="Gendo" width="200px" height="200px">
-				<h5>"El mayor temor de la humanidad es la humanidad misma"</h5>
-				<h4>Gendo Ikari</h4>
-				<p class="padre__text">Es el comandante de la organización militar NERV y el principal impulsor a su creación. También es el jefe del Proyecto E y padre de Shinji Ikari, piloto del Evangelion Unidad 01. Es reconocible por su clásico gesto de juntar las manos (siempre con guantes blancos) por delante de la cara.</p>
-				<input id="gendo-open" type="button" value="Gendo Ikari" onclick="gendo();" />
-				<div class="gendo responsive">
-					<div class="gendo__fondo">
-						<h2 class="gendo__titulo">Gendo Ikari</h2>
-						<a href="../PAG/Gendo_Ikari.html"><img src="../IMG/gendoIkari-S.jpg" alt="Kaji"></a>
-						<p class="gendo__titulo">Gendo Ikari- (Evangelion 3.0+1.0)</p>
-							<p class="gendo__titulo__info">Continua con sus planes, aunque eso signifique la extincion total de la vida</p>
-							<p class="gendo__titulo__info">Se enfrenta a su hijo, al no ser capaz de comprender la realidad, quiere alterarla</p>
-							<p class="gendo__titulo__info">Palabras que pronuncia al estar junto a su hijo; "Yui!...ahora lo entiendo, simpre estuviste con Shinji... y yo no lo estuve"</p>
-						<input id="gendo-close" type="button" value="cerrar">
-					</div>
+		</div>
+		<div class="padre__fontFamily--light">
+			<img src="../IMG/ryojiKaji.jpg" alt="Kaji" width="200px" height="300px">
+			<h5>"Ahora hay algo que tú puedes hacer, algo que desgraciadamente sólo puedes hacer tú"</h5>
+			<h4>Ryoji Kaji</h4>
+			<p class="padre__text">Parece ser un triple agente, que trabaja como inspector especial para NERV, pero secretamente realiza una investigación detallada sobre la organización, cumpliendo la peligrosa tarea de espía encubierto.</p>
+			<input id="kaji-open" type="button" value="Ryoji Kaji" onclick="kaji();" />
+			<div class="kaji responsive">
+				<div class="kaji__fondo">
+					<h2 class="kaji__titulo">Ryoji Kaji</h2>
+					<a href="../PAG/Ryoji_Kaji.html"><img src="../IMG/ryojiKaji-S.png" alt="Kaji"></a>
+					<p class="kaji__titulo">Ryoji Kaji- (Evangelion 3.0+1.0)</p>
+						<p class="kaji__titulo__info">..."para detener el Tercer Impacto alguien devia sacrificarse"...</p>
+						<p class="kaji__titulo__info">Esposo de Misato, padre de Ryoji Kaji</p>
+						<p class="kaji__titulo__info">Frase que le dice a Misato antes de partir; "Misato... ahora dejo todo en tus manos"</p>
+					<input id="kaji-close" type="button" value="cerrar">
 				</div>
 			</div>
-		</section>
-		<section class="padre__fontFamily">
-			<div>
-				<h4 class="padre__titular">Pilotos</h4>
-				<div class="padre__titular">
-					<img src="../IMG/pilotos.jpg" alt="Pilotos" width="300px" height="200px">
+		</div>
+		<div class="padre__fontFamily--light">
+			<img src="../IMG/gendoIkari.jpg" alt="Gendo" width="200px" height="200px">
+			<h5>"El mayor temor de la humanidad es la humanidad misma"</h5>
+			<h4>Gendo Ikari</h4>
+			<p class="padre__text">Es el comandante de la organización militar NERV y el principal impulsor a su creación. También es el jefe del Proyecto E y padre de Shinji Ikari, piloto del Evangelion Unidad 01. Es reconocible por su clásico gesto de juntar las manos (siempre con guantes blancos) por delante de la cara.</p>
+			<input id="gendo-open" type="button" value="Gendo Ikari" onclick="gendo();" />
+			<div class="gendo responsive">
+				<div class="gendo__fondo">
+					<h2 class="gendo__titulo">Gendo Ikari</h2>
+					<a href="../PAG/Gendo_Ikari.html"><img src="../IMG/gendoIkari-S.jpg" alt="Kaji"></a>
+					<p class="gendo__titulo">Gendo Ikari- (Evangelion 3.0+1.0)</p>
+						<p class="gendo__titulo__info">Continua con sus planes, aunque eso signifique la extincion total de la vida</p>
+						<p class="gendo__titulo__info">Se enfrenta a su hijo, al no ser capaz de comprender la realidad, quiere alterarla</p>
+						<p class="gendo__titulo__info">Palabras que pronuncia al estar junto a su hijo; "Yui!...ahora lo entiendo, simpre estuviste con Shinji... y yo no lo estuve"</p>
+					<input id="gendo-close" type="button" value="cerrar">
 				</div>
 			</div>
-			<div class="padre__fontFamily--dark">
-				<img src="../IMG/fon_Rei.png" alt="Rei" width="200px" height="200px">
-				<h5>"El que se odia a sí mismo, no puede agradar a los demás ni tampoco confiar en nadie"</h5>
-				<h4>Rei Ayanami</h4>
-				<p class="padre__text">Es la Primera Niña elegida por el Instituto Marduk, designada como piloto del Evangelion Unidad 00.</p>
-				<input id="rei-open" type="button" value="Rei Ayanami" onclick="rei();" />
-				<div class="rei responsive">
-					<div class="rei__fondo">
-						<h2 class="rei__titulo">Rei Ayanami</h2>
-						<a href="../PAG/Rei_Ayanami.html"><img src="../IMG/reiAyanami-S.jpg" alt="Rei"></a>
-						<p class="rei__titulo">Rei Ayanami- (Evangelion 3.0+1.0)</p>
-							<p class="rei__titulo__info">Sigue ordenes, ordenes dictadas por Gendo Ikari... "¿Qué haria la Rei original?"</p>
-							<p class="rei__titulo__info">Aprende una vida, una vida sin Evas, sin Gendo... una vida tranquila junto a Shinji... o eso le gustaria tener</p>
-							<p class="rei__titulo__info">Palabras que le pronuncia a Shinji; "Lo siento mucho, no logre cumplir mi promesa, de que ya no debas subir a un Eva"</p>
-						<input id="rei-close" type="button" value="cerrar">
-					</div>
+		</div>
+	</section>
+	<section class="padre__fontFamily">
+		<div>
+			<h4 class="padre__titular">Pilotos</h4>
+			<div class="padre__titular">
+				<img src="../IMG/pilotos.jpg" alt="Pilotos" width="300px" height="200px">
+			</div>
+		</div>
+		<div class="padre__fontFamily--dark">
+			<img src="../IMG/fon_Rei.png" alt="Rei" width="200px" height="200px">
+			<h5>"El que se odia a sí mismo, no puede agradar a los demás ni tampoco confiar en nadie"</h5>
+			<h4>Rei Ayanami</h4>
+			<p class="padre__text">Es la Primera Niña elegida por el Instituto Marduk, designada como piloto del Evangelion Unidad 00.</p>
+			<input id="rei-open" type="button" value="Rei Ayanami" onclick="rei();" />
+			<div class="rei responsive">
+				<div class="rei__fondo">
+					<h2 class="rei__titulo">Rei Ayanami</h2>
+					<a href="../PAG/Rei_Ayanami.html"><img src="../IMG/reiAyanami-S.jpg" alt="Rei"></a>
+					<p class="rei__titulo">Rei Ayanami- (Evangelion 3.0+1.0)</p>
+						<p class="rei__titulo__info">Sigue ordenes, ordenes dictadas por Gendo Ikari... "¿Qué haria la Rei original?"</p>
+						<p class="rei__titulo__info">Aprende una vida, una vida sin Evas, sin Gendo... una vida tranquila junto a Shinji... o eso le gustaria tener</p>
+						<p class="rei__titulo__info">Palabras que le pronuncia a Shinji; "Lo siento mucho, no logre cumplir mi promesa, de que ya no debas subir a un Eva"</p>
+					<input id="rei-close" type="button" value="cerrar">
 				</div>
 			</div>
-			<div class="padre__fontFamily--dark">
-				<img src="../IMG/fon_asuka.png" alt="Asuka" width="200px" height="200px">
-				<h5>"No lo sabrás hasta que lo intentes"</h5>
-				<h4>Asuka Langley Sohryu</h4>
-				<p class="padre__text">Es la Segunda Niña elegida por el Instituto Marduk, designada como piloto del Evangelion Unidad 02.</p>	
-				<input id="asuka-open" type="button" value="Asuka Langley Shikinami" onclick="asuka();" />
-				<div class="asuka responsive">
-					<div class="asuka__fondo">
-						<h2 class="asuka__titulo">Asuka Langley Shikinami</h2>
-						<a href="../PAG/Asuka_Langley_Sohryu.html"><img src="../IMG/asukaLangley-S.jpg" alt="Asuka"></a>
-						<p class="asuka__titulo">Asuka Langley Shikinami- (Evangelion 3.0+1.0)</p>
-							<p class="asuka__titulo__info">Mantiene su lucha contra las maquinas de NERV, junto a su Eva-02; una espcie de comando desde el frente o tambien llamada "su alteza"</p>
-							<p class="asuka__titulo__info">En su intento de destruir el ultimo Evangelion, Gendo le tiende una trampa. Y su mente es atrapapa y corrompida, por la Asuka original... "¿Osea, que yo era un clon?"</p>
-							<p class="asuka__titulo__info">Testimonia dicho hacia Shinji; "Alguna vez me gustate, pero ya no es el caso"</p>
-						<input id="asuka-close" type="button" value="cerrar">
-					</div>
+		</div>
+		<div class="padre__fontFamily--dark">
+			<img src="../IMG/fon_asuka.png" alt="Asuka" width="200px" height="200px">
+			<h5>"No lo sabrás hasta que lo intentes"</h5>
+			<h4>Asuka Langley Sohryu</h4>
+			<p class="padre__text">Es la Segunda Niña elegida por el Instituto Marduk, designada como piloto del Evangelion Unidad 02.</p>	
+			<input id="asuka-open" type="button" value="Asuka Langley Shikinami" onclick="asuka();" />
+			<div class="asuka responsive">
+				<div class="asuka__fondo">
+					<h2 class="asuka__titulo">Asuka Langley Shikinami</h2>
+					<a href="../PAG/Asuka_Langley_Sohryu.html"><img src="../IMG/asukaLangley-S.jpg" alt="Asuka"></a>
+					<p class="asuka__titulo">Asuka Langley Shikinami- (Evangelion 3.0+1.0)</p>
+						<p class="asuka__titulo__info">Mantiene su lucha contra las maquinas de NERV, junto a su Eva-02; una espcie de comando desde el frente o tambien llamada "su alteza"</p>
+						<p class="asuka__titulo__info">En su intento de destruir el ultimo Evangelion, Gendo le tiende una trampa. Y su mente es atrapapa y corrompida, por la Asuka original... "¿Osea, que yo era un clon?"</p>
+						<p class="asuka__titulo__info">Testimonia dicho hacia Shinji; "Alguna vez me gustate, pero ya no es el caso"</p>
+					<input id="asuka-close" type="button" value="cerrar">
 				</div>
 			</div>
-			<div class="padre__fontFamily--dark">
-				<img src="../IMG/Shinji_Ikari.png" alt="Shinji" width="200px" height="300px">
-				<h5>"¡No debo huir!"</h5>
-				<h4>Shinji Ikari</h4>
-				<p class="padre__text">Es el Tercer Niño piloto designado del Evangelion Unidad 01.
-				Es hijo de la bioingeniera Yui Ikari y del jefe de la organización NERV, Gendo Ikari. Después de la muerte de su madre, fue abandonado por su padre y vivió durante 11 años con su sensei, hasta que fue llamado a Tokio-3 para pilotar la Unidad-01 y enfrentar a los ángeles.
-				Vive inicialmente con Misato Katsuragi, aunque más tarde se une a ellos Asuka Langley Sohryu.</p>
-				<input id="shinji-open" type="button" value="Shinji Ikari" onclick="shinji();" />
-				<div class="shinji responsive">
-					<div class="shinji__fondo">
-						<h2 class="shinji__titulo">Shinji Ikari</h2>
-						<a href="../PAG/Shinji_Ikari.html"><img src="../IMG/Shinji_Ikari-S.jpg" alt="Shinji"></a>
-						<p class="shinji__titulo">Shinji Ikari- (Evangelion 3.0+1.0)</p>
-							<p class="shinji__titulo__info">Se siente insignificante, inutil. Pero recorre los territorio con humanos supervivientes (villas civiles), dandose un motivo para pelear y enfrentarse a su padre</p>
-							<p class="shinji__titulo__info">Shinji vuelve a pilotar el Eva-01, con el apoyo de Misato y Ritsuko: "...conoci a tu hijo, Misato. Me cayo bien y fue amable"</p>
-							<p class="shinji__titulo__info">Tras enfrentarse a su padre, solo le queda un ultimo paso, un deseo final: "deseo que los Evas... jamas hubiesen existido"</p>
-						<input id="shinji-close" type="button" value="cerrar">
-					</div>
+		</div>
+		<div class="padre__fontFamily--dark">
+			<img src="../IMG/Shinji_Ikari.png" alt="Shinji" width="200px" height="300px">
+			<h5>"¡No debo huir!"</h5>
+			<h4>Shinji Ikari</h4>
+			<p class="padre__text">Es el Tercer Niño piloto designado del Evangelion Unidad 01.
+			Es hijo de la bioingeniera Yui Ikari y del jefe de la organización NERV, Gendo Ikari. Después de la muerte de su madre, fue abandonado por su padre y vivió durante 11 años con su sensei, hasta que fue llamado a Tokio-3 para pilotar la Unidad-01 y enfrentar a los ángeles.
+			Vive inicialmente con Misato Katsuragi, aunque más tarde se une a ellos Asuka Langley Sohryu.</p>
+			<input id="shinji-open" type="button" value="Shinji Ikari" onclick="shinji();" />
+			<div class="shinji responsive">
+				<div class="shinji__fondo">
+					<h2 class="shinji__titulo">Shinji Ikari</h2>
+					<a href="../PAG/Shinji_Ikari.html"><img src="../IMG/Shinji_Ikari-S.jpg" alt="Shinji"></a>
+					<p class="shinji__titulo">Shinji Ikari- (Evangelion 3.0+1.0)</p>
+						<p class="shinji__titulo__info">Se siente insignificante, inutil. Pero recorre los territorio con humanos supervivientes (villas civiles), dandose un motivo para pelear y enfrentarse a su padre</p>
+						<p class="shinji__titulo__info">Shinji vuelve a pilotar el Eva-01, con el apoyo de Misato y Ritsuko: "...conoci a tu hijo, Misato. Me cayo bien y fue amable"</p>
+						<p class="shinji__titulo__info">Tras enfrentarse a su padre, solo le queda un ultimo paso, un deseo final: "deseo que los Evas... jamas hubiesen existido"</p>
+					<input id="shinji-close" type="button" value="cerrar">
 				</div>
 			</div>
-			<div class="padre__fontFamily--dark">
-				<img src="../IMG/kaworu.png" alt="Kaworu" width="200px" height="300px">
-				<h5>"El destino de la humanidad, la esperanza está hilada con el sufrimiento"</h5>
-				<h4>Kaworu Nagisa</h4>
-				<p class="padre__text">Es el Quinto Niño elegido, enviado a NERV por SEELE como piloto de reemplazo del Evangelion Unidad 02</p>	
-				<input id="kaworu-open" type="button" value="Kaworu Nagisa" onclick="kaworu();" />
-				<div class="kaworu responsive">
-					<div class="kaworu__fondo">
-						<h2 class="kaworu__titulo">Kaworu Nagisa</h2>
-						<a href="../PAG/Kaworu_Nagisa.html"><img src="../IMG/kaworu-S.jpg" alt="Kaworu"></a>
-						<p class="kaworu__titulo">Kaworu Nagisa- (Evangelion 3.0+1.0)</p>
-							<p class="kaworu__titulo__info">Esta dispuesto a sacrificarse con el fin de aligerar la carga de Shinji</p>
-							<p class="kaworu__titulo__info">Le enseña a Shinji a tocar el piano, aunque no tenga conocimiento previo; "Dejate fluir con las notas"</p>
-							<p class="kaworu__titulo__info">Una simple pregunta; "¿Cual es tu deseo Shinji?"</p>
-						<input id="kaworu-close" type="button" value="cerrar">
-					</div>
+		</div>
+		<div class="padre__fontFamily--dark">
+			<img src="../IMG/kaworu.png" alt="Kaworu" width="200px" height="300px">
+			<h5>"El destino de la humanidad, la esperanza está hilada con el sufrimiento"</h5>
+			<h4>Kaworu Nagisa</h4>
+			<p class="padre__text">Es el Quinto Niño elegido, enviado a NERV por SEELE como piloto de reemplazo del Evangelion Unidad 02</p>	
+			<input id="kaworu-open" type="button" value="Kaworu Nagisa" onclick="kaworu();" />
+			<div class="kaworu responsive">
+				<div class="kaworu__fondo">
+					<h2 class="kaworu__titulo">Kaworu Nagisa</h2>
+					<a href="../PAG/Kaworu_Nagisa.html"><img src="../IMG/kaworu-S.jpg" alt="Kaworu"></a>
+					<p class="kaworu__titulo">Kaworu Nagisa- (Evangelion 3.0+1.0)</p>
+						<p class="kaworu__titulo__info">Esta dispuesto a sacrificarse con el fin de aligerar la carga de Shinji</p>
+						<p class="kaworu__titulo__info">Le enseña a Shinji a tocar el piano, aunque no tenga conocimiento previo; "Dejate fluir con las notas"</p>
+						<p class="kaworu__titulo__info">Una simple pregunta; "¿Cual es tu deseo Shinji?"</p>
+					<input id="kaworu-close" type="button" value="cerrar">
 				</div>
 			</div>
-		</section>
-	</div>
+		</div>
+	</section>
+	<footer>
 	<div id="contAd" class="adicional">
 		<input type="button" value="La Nueva Piloto" onclick="mari();" />
-	</div>	
-</div>
+	</div>
+	<div>
+		<h4><a class="navbar-brand detalles__transition inicio" href="6.editor-us.html">Para Vos</a></h4>
+	</div>
+	</footer>
+</div>	
 </body>
 </html>

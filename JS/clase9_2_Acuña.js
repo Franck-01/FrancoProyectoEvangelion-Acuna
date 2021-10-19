@@ -112,3 +112,21 @@ adicional.innerHTML = `
 					`;
 contenidoAdicional.appendChild(adicional);
 }
+function usuario() {
+
+$("body").prepend(`<h4><a class="navbar-brand detalles__transition inicio" href="3.miembros-pilotos.html">Inicio</a></h4>
+					<div>
+					<h1>Solo para vos</h1>
+					<textarea rows="20" cols="100" class="carga">
+					Nombre:
+					Cargo o designación:
+					Edad:
+					Una pequeña Historia:
+					</textarea>
+					</div>`);
+//Asociamos el evento change a todos los inputs
+$(".carga").change(function (e) { 
+    console.log(e.target.value);
+    console.log(this.value);
+});
+}

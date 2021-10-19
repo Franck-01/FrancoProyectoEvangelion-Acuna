@@ -231,7 +231,7 @@
 }
 
 #pilotomiembro .adicional {
-  background-image: url("IMG/Mari.jpg");
+  background-image: url("IMG/Mari.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1018,4 +1018,20 @@ input:hover {
 .modal-active {
   visibility: visible;
   opacity: 1;
+}
+
+.carga {
+  width: 100%;
+  height: 100vh;
+  background-image: url("IMG/misatoB.gif");
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 1s ease-out 1s;
 }
