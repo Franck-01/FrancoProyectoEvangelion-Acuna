@@ -232,6 +232,20 @@ modalCerrar.addEventListener("click", () => {
 	modalContainer.classList.remove("modal-active")
 })
 
+$.get('./episodios.json', (res) => {
+    console.log(res)
+
+    res.forEach((episodio) => {
+
+        $('#episodios').append(`
+            <li>
+                <h3>Episodios: ${episodio.episodios}</h3>
+                <h3>Detalles: ${episodio.detalles}</h3>
+            </li>
+        `)
+    })
+})
+
 ingresoUsuario()
 cuestionario()
 comandoAccionar()
