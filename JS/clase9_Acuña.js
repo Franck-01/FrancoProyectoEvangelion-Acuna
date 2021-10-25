@@ -232,7 +232,9 @@ modalCerrar.addEventListener("click", () => {
 	modalContainer.classList.remove("modal-active")
 })
 
-$.get('./episodios.json', (res) => {
+const URL = "./JSON/data.json"
+
+$.getJSON(URL, (res) => {
     console.log(res)
 
     res.forEach((episodio) => {
