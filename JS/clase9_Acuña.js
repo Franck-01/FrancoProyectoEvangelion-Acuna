@@ -248,6 +248,13 @@ $.getJSON(URL, (res) => {
     })
 })
 
+$('#activa').click( () => {
+    $('#episodios').slideDown(1000)
+})
+$('#desactiva').click( () => {
+    $('#episodios').slideUp(1000)
+})
+
 ingresoUsuario()
 cuestionario()
 comandoAccionar()
