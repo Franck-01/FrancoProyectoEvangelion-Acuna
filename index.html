@@ -2,122 +2,116 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Pequeños detalles sobre algunos personajes de Evangelion (temporada 1)">
+	<meta name="description" content="Informacion, sobre Neon Genesis Evangelion y Rebuild Evangelion, datos sobre y comparacion sobre ambas versiones del anime.">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="keywords" content="evangelion, pilotos, evas, nerv">
-	<link rel="stylesheet" href="fondo.css"/>
-	<title>Evangelion / Temporada-1</title>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="Evangelion.css"/>
+	<script defer src="Js/Evangelion.js">JavaScript</script>
+	<title>Evangelion</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-<script defer src="JS/clase9_Acuña.js">JavaScript</script>
-<body id="principal">
-<div class="fondo padre detalles responsive">
-<header class="container-fluid">
-	<h1 class="padre__titulo detalles__transition">Evangelion</h1>
-	<h2 class="padre__descripcion">Los ángeles se acercaban, con la muerte como su acompañante, debiamos defendernos</h2>
-	<nav>
-  	<div class="navbar navbar-expand-lg">
-	<a class="navbar-brand padre__linksEnlaces detalles__transition" href="PAG/2.historia-nerv.html">Historia y Transfondo</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
-  	<a class="navbar-brand padre__linksEnlaces detalles__transition" href="PAG/3.miembros-pilotos.html">Miembros y Pilotos</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    	<span class="navbar-toggler-icon"></span>
-  		</button>
-  	<a class="navbar-brand padre__linksEnlaces detalles__transition" href="PAG/4.evas.html">Modelos, pilotos operantes</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-		</button>
-  	<a class="navbar-brand padre__linksEnlaces detalles__transition" href="PAG/5.ángeles.html">Ángeles</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    	<span class="navbar-toggler-icon"></span>
-  		</button>
-	</div>
-	</nav>
+<body class="fondo responsive">
+<div class="letra">
+<header>
+	<h1 class="letra__titulo">Evangelion</h1>
+	<h2 class="letra__descripcion">(El Mensaje del nuevo comienzo)</h2>
 </header>
-<div class="container row">
-	<section class="col">
-    	<div class="detalles__transition">
-			<p><a class="padre__linksEnlaces" href="https://www.youtube.com/watch?v=bNBzOiavw_4">Opening Completo-Sub Español</a></p>
-			<iframe width="290" height="190" src="https://www.youtube.com/embed/nU21rCWkuJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>	
-		</div>
-		<div class="detalles__transition">
-			<h4 class="padre__tituloNetflix">Trailer Netflix</h4>
-			<video width="270" height="170" controls="" autoplay="" loop="" muted="">
-			<source src="IMG/trailer.mp4" type="video/mp4">
-			</video>
-		</div>
-		<input id="modal-abrir" type="button" value="creador de Evangelion" onclick="hideakiAnno.presentar();" />
-		<div class="modalC">
-			<div class="modalC__fondo">
-				<h2 class="modalC__titulo">Hideaki Anno - Creador de Evangelion</h2>
-				<input id="modal-cerrar" type="button" value="cerrar">
-				<p class="modalC__info">Hideaki Anno, el creador, autor y director del famoso anime: Evangelion; estando presente en su desarrollo de manga, su adaptacion al anime y director en sus peliculas (incluyendo las mas recientes), marcando el comienzo y final de una grandiosa saga.</p>
-				<p class="modalC__info">Su recidencia actual se encuntra en la capital de Japón, Tokio, contando con 61 años, fue meresedor de premios, destacando sus papeles como director, guionista y una grandiosa produccion en sus obras,</p>
-				<img class="imagen" src="IMG/HideakiAnno.jpg" alt="Hideaki Anno">
+<section class="letra__descripcion">
+	<button id="activa">Hideaki Anno</button>
+	<button id="desactiva">Minimizar</button>
+		<hr>
+		<ul id="hideaki">	
+		</ul>
+</section>
+<aside>
+	<div>
+		<h2 class="letra__titulo"><a href="NeonGenesis/NeonGenesis.html" target="_blank">Neon Genesis Evangelion</a></h2>
+		<img src="Img/reunion.jpg" alt="reunion">
+			<p>La Historia comienza 15 despues de la casi extincion de la humanidad, ocurrido en el año 2000 con el evento conocido como Segundo Impacto. Un evento catastrofico ocacionado por unos seres Misteriosos llamados angeles. En respuesta la humanidad, comienza a trabajar en las defensas para proximos ataques como este.</p>
+			<p>Aqui es donde nuestro protagonista, Shinji Ikari, llega a NERV (organizacion paramiliar encargada de preservar el futuro de la humanidad), en el mismo dia que se enfrenta a un angel con la Unidad-01. Un bio mecha humanoides llamado Evangelion (acortado a EVA).</p>
+			<p>Con el avance de la historia Shinji va a ir interactuando con otros personajes, enfrentandose a situaciones que no solo le haran peligrar su vida, sino que lo haran cuestionarse su verdadera utilidad, ahora como el Tercer Niño Elegido, y piloto de Evangelion.</p>
+			<p>Conociendo a las otras pilotos, Rei Ayanami, la piloto de la Unidad-00 y la Asuka Landley Sohru, la piloto de la Unidad-02</p>
+			<p class="letra__descripcion">"Me uni a Nerv, porque crei que mi padre me necesitaria" - "¿No confias en el trabajo de tu padre?"</p>
+			<p class="letra__descripcion">"¿Por que piloteas un Eva?" - "Que pregunta tan estupida; te queda bien tu apodo de Shinji idiota. Piloteo un Eva porque quiero"</p>
+			<p class="letra__descripcion">"¡Era malo que Shinji se comportara amistosamente, pero si una muñeca sin emociones como tú me compadece, estoy perdida!" - "No soy una muñeca" - "¡¿Como?! ¡Tu obedeces sin pensar lo que te ordenan! ¡Te matarias si el comandande Ikari lo ordenara!" - "Asi es"</p>
+		<h4 class="letra__descripcion">..."Y termina con un nuevo comienzo; un ciclo que se reinicia"...</h4>
+		<div class="row">
+			<div class="col youtube">
+				<iframe height="70%" width="90%" src="https://www.youtube.com/embed/nU21rCWkuJw" title="Neon Genesis Evangelion Opening" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			</div>
+			<div class="col youtube">
+				<h4>Trailer Netflix</h4>
+				<video height="70%" width="90%" controls="" autoplay="" loop="" muted="">
+				<source src="Img/trailer.mp4" type="video/mp4">
+				</video>
 			</div>
 		</div>
-		<button id="activa">Episodios</button>
-		<button id="desactiva">Minimizar</button>
-			<hr>
-			<ul id="episodios">	
-			</ul>
-	</section>
-	<aside class="col detalles">
-		<h3 class="padre__estilos">Nerv</h3>
-		<p>Nuestro deber es asegurar un futuro para la humanidad</p>
-		<div class="col detalles__transform">
-			<div>
-			<a href="PAG/2.historia-nerv.html"><img src="IMG/nerv.jpg" alt="Nerv-Logo"></a>
-			</div>
-		</div>
-		<input type="button" value="Presentacion de Pilotos" onclick="piloto0.presentar(); piloto1.presentar(); piloto2.presentar();" />
-		<input type="button" value="Personal de NERV" onclick="equipo();" />
-	<h3 class="padre__estilos">Evas</h3>
-		<div class="detalles__transform">
-			<a href="PAG/4.evas.html"><img src="IMG/GIF-EVAS.gif" alt="parte de eva"></a>
-		</div>
-		<input type="button" value="Unidades Evangelion" onclick="produccionEvas(); sincronizacion();" />
-		<p>Maquinas gigantes, lo único capaz de enfrentarse a los angeles</p>
-		<h3 class="padre__estilos">Ángeles</h3>
-		<p>Descendientes de los primeros seres en el universo, Adán y Lilith, se cree que los ángeles son el atributo mas fuerte de la creación... y el humano, el mas inteligente</p>
-		<div class="detalles__transform">
-			<a href="PAG/5.ángeles.html"><img src="IMG/Mascara.jpg" alt="ángeles"></a>
-		</div>
-	</aside>
-</div>
-<footer>
-	<form class="container">
-	  <div class="form-group">
-	    <p>Si tienes dudas o sugerencias, te dejamos esta area para eso</p>
-	    <form action="formulario.html" method="POST" enctype="multipart/form-data">
-	    <label for="exampleFormControlInput1">Ingresa tu mail</label>
-	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu email">
-	  </div>
-	  <div class="form-group">
-	    <label for="exampleFormControlSelect1">¿Cual Eva elegirias?</label>
-	    <select class="form-control" id="exampleFormControlSelect1">
-	      <option>Eva 00</option>
-	      <option>Eva 01</option>
-	      <option>Eva 02</option>
-	      <option>Ninguno</option>
-	      <option>Un Eva no es un robot, es un angel controlado</option>
-	    </select>
-	  </div>
-	  <div class="form-group">
-	    <label for="exampleFormControlTextarea1">Tu sugerencia o consulta</label>
-	    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-	  </div>
-	    <button type="submit" class="btn btn-primary">ENVIAR</button>
-	    <button type="submit" class="btn btn-primary">BORRAR TODO</button>
-    </form>
-	<div id="contAd" class="adicional">
-		<input type="button" value="material adicional" onclick="boton();" />
-	</div>	
-</footer>
+		<div>
+			<img src="Img/NeonGenesisEvangelion_2.jpg" alt="barca alzada">
+		</div>		
+	</div>
+	<div>
+		<h2 class="letra__titulo">Rebuild Evangelion</h2>
+		<img src="Img/evangelion_rebuild.png" alt="presentacion">
+			<p class="letra__descripcion">Una historia que se repite nuevamente, como mencionan en SEELE: "el ser humano esta condenado a cometer siempre los mismos errores del pasado". Esta vez sera diferente. No seguira el mismo circulo ... lo rompera.</p>
+		<h2 class="letra__titulo">Evangelion: 1.11 You Are (Not) Alone</h2>
+		<a href="https://youtu.be/o0WXdG_FxK0" target="_blank"><img src="Img/evangelion_1.1.jpg" alt="1.1"></a>
+			<p>La historia comienza de la misma forma que inicia en Neon Genesis Evangelion, años despues del Segundo Impacto; solo que, persisten rastros del mundo anterior, ciudades antiguas con caracteristicas similares a las actuales, el mar de sangre con rastros de los evangelion destruidos.</p>
+			<p>Shinji llego a la ciudad por solicitud de su padre, el cual, lo obliga a pilotar la Unidad 01 y derrotar al angel. En su estadia, convive con Misato Katsuragi (una de las supervivientes del Segundo Impacto), quien le explica la informacion recopilada sobre los angeles, los evangelion... y Lilith, el segundo angel, el angel del conocimiento.</p>
+			<p>Shinji presenta un ligero interes hacia Rei Ayanami (la piloto de la Unidad-00), quien lleva una relacion mas cercana con Gendo Ikari.</p>
+			<p class="letra__descripcion">"Papá, ¿Por qué me llamaste?" - "Creo que la razon es obvia en este momento" - "¿Qué dices? ¿Esperas que entre a esta cosa y peleé, es eso?" - "Correcto" - "¡Pero es una locura! ¡¿Por que hasces esto?! ¡No habias querido que estuviera aqui, ¿Por que ahora?" - "Porque ahora me vas a ser util"</p>
+			<p class="letra__descripcion">"¡¿Estas escuchando lo que te digo?!" - "Si, te escuche, fuerte y claro. ¿Pero que importa eso ahora, verdad? Oye, piloteare cuando ustedes me digan; es lo unico que quieren ¿no?</p>
+			<p class="letra__descripcion">"¡Ya me escuchaste, es claro que es inutil, saquenlo!" - "¡Espero comandande! ¡Él pudo huir pero entro al Eva! Mientras decida pelear debemos confiar en lo que hara; le pido que tenga fe, en su propio hijo. Por favor, confie en mi, su hijo es el piloto de la Unidad-01" - "Depende de ti, haz lo que creas correcto" - "Gracias comandante"</p>
+			<p class="letra__descripcion">"Pero, ¿por que lloras?... Lo lamento, creo que... no se que hacer en situaciones asi" - "Puedes empezar por sonrreir"</p>
+			<p class="letra__descripcion">"...de nuevo el tercero... no haz cambiado... espero verte pronto... Shinji Ikari"</p>
+			<h4>Trailer</h4>
+				<video height="50%" width="50%" controls="" autoplay="" loop="" muted="">
+				<source src="Img/Evangelion_1.0 _trailer.mp4" type="video/mp4">
+				</video>
+		<h2 class="letra__titulo">Evangelion: 2.22 You Can (Not) Advance</h2>
+			<a href="https://youtu.be/72x5xdULxdo" target="_blank"><img src="Img/evangelion_2.2.jpg" alt="2.2"></a>
+			<p>Shinji junto a su padre, visitan la tumba de su madre, Yui Ikari; el unico momento en el que se relaciona con su padre. En su regreso a Nerv, conoce a Asuka Langley Shikinami, la piloto de la Unidad-02.</p>
+			<p>En una prueba de una nueva unidad Evangelion, Asuka queda incapacitada. Es remplazada por Mari Illustrious Makinami para pilotar la Unidad-02. En una pelea contr un angel, la Unidad-02 queda incapacitada y la Unidad-00 junto con Rei es destruida. Shinji junto a su eva derrota al angel; en un intento por salvar el alma de Rei que se encontraba atrapda dentro del angel, provocando el casi Tercer Impacto... pero siendo detenido por el Mark-06, por Kaworu Nagisa.</p>
+			<p class="letra__descripcion">"La gente aprende a olvidar para seguir adelante... pero hay cosas que nunca se deben olvidar; tu madre me enseño a ser agradecido con esos recuerdos, vengo aqui... pra no olvidar lo importante que son" - "¿Tienes una foto de mamá?" - "Todas se destruyeron, incluso su tumba esta vacia... no tengo nada" - "Asi que te deshiciste de todo, mi maestro dijo que lo harias" - "Todo lo que necesito esta en mi corazon y en mi mente"</p>
+			<p class="letra__descripcion">"Pero esta brisa marina... ¿No crees que no solo huele a pescado, sino a algo muy raro?" - "Es el olor de putrefaccion, es la evidencia de que aqui hay vida... a diferencia del rojo vacio alla afuera. Asi debe oler un oceano real"</p>
+			<p class="letra__descripcion">"¿Mi objetivo... es ese? No puede ser... ¡Es un Eva!... Esto esta mal" - "Tu objetivo se aproxima, debe ser destruido" - "Pero esto, no tiene sentido... Se supone que Asuka es el piloto... ¿Ella esta adentro?"</p>
+			<p class="letra__descripcion">"Insubordinacion, secuestra un Eva, amenazas de traicion, todas son ofensas serias... ¿Tienes algo que decir en tu defensa?" - "Si... no quiero volver a pilotear un Eva, jamas" - "Entiendo, entonces debes irte... Una vez mas, estas huyendo... debes sacrificar todo por tus sueños, es algo que debes hacer solo, nadie va a hacerlo por ti... es hora de que madures Shinji" - "Eso dices, pero ni siquiera se que significa eso"</p>
+			<p class="letra__descripcion">"¡No piloteare, ya lo decidi! ¡No piloteare, ya lo decidi! ¡No lo hare!" - "No lo entiendo, ¿Que tiene de bueno quedarte sentado sitiendote mal por ti mismo?"</p>
+			<p class="letra__descripcion">"Ahora si a llegado el momento, Shinji Ikari. Y te doy mi palabra solmne... te mostrare la verdadera felicidad"</p>
+			<h4>Trailer</h4>
+				<video height="50%" width="50%" controls="" autoplay="" loop="" muted="">
+				<source src="Img/Evangelion_2.0 _trailer.mp4" type="video/mp4">
+				</video>
+		<h2 class="letra__titulo">Evangelion: 3.33 You Can (Not) Redo</h2>
+		<a href="https://youtu.be/zDQZVmZcNYA" target="_blank"><img src="Img/evangelion_3.3.jpg" alt="3.3"></a>
+			<p>La historia continua, en un mundo asolado por la muerte y la destruccion, sujetandose una pequeña porcion de esperanza. Asuka y Mari con sus Evas, logran encontrar s ls Unidad-01, la cual, aunque poseia a Shinji en su interior. Este despierta, solo para descubrir que el mundo que conocia habia cambaido radicalmente. Con NERV al mando de Gendo enfrentadose a WILLE, la cual estaba al mando de Misato, con el objetivo de evitar otro Impacto.</p>
+			<p>Shinji escapa de WILE, y regresa a las ruinas de Nerv, junto a una Rei que parece no recodar nada, y conociendo a Kaworu Nagisa, con quien forma una pequeña amistad. Shinji se siente culpable por el caos provocado en su intento de salvar a Rei, pero Gendo le ordena subirse a un nuevo tipo de Eva, que, segun sus propias palabras: "lo ayudaria a volver todo a la normalidad". Pero que en realidad, era parte del plan personal de Gendo Ikari.</p>
+			<p class="letra__descripcion">"¡Misato, quiero ayudar! ¿Y la Unidad-01? ¡Yo la piloteare, dejame ayudar a Asuka! ¿Necesitas que yo sea el piloto, verdad? ¡MISATO!" - "Te equivocas, no necesitamos que pilotees un Eva" - "¿Entonces... no me necesitas?... Pero ahora... ¿Que... que puedo hacer para ayudar? ¡Misato!" - "Escuchame muy bien Shinji, apartir de este momento, no haras nada"</p>
+			<p class="letra__descripcion">"Dime, ¿recuerdas algo de tu madre" - "No... yo era muy peqeuño cuando ella... y luego, mi padre se deshizo de todas sus pertenencias" - "La chica que tu conoces como Rei Ayanami, es un clon de Yui Ikari... tu madre. Un clon creado por tu padre"</p>
+			<p class="letra__descripcion">"Por favor, dime... ¿Tu eres Rei?" - "Si, Rei Ayanami" - "¡Entonces, yo te salver, ¿verdad?!" - "No lo se"</p>
+			<p class="letra__descripcion">"Escuchame Shinji, tu unica esperanza es recuperar las dos lanzas del dogma central, son la llave para iniciar el proyecto de instrumentalizacion humana. Nosotros dos podemos escribirlas, sin ellas, NERV no podra desencadenar el cuarto impacto. Pero nuestras manos, junto con la unidad 13, nos otorgara el poder para restaurar el mundo" - "Es cierto"</p>
+			<h4>Trailer</h4>
+				<video height="50%" width="50%" controls="" autoplay="" loop="" muted="">
+				<source src="Img/Evangelion_3.0 _trailer.mp4" type="video/mp4">
+				</video>
+		<h2 class="letra__titulo">Evangelion: 3.0+1.0 Thrice Upon a Time</h2>
+		<a href="https://youtu.be/s64_FQY9-1c" target="_blank"><img src="Img/evangelion_3+1.jpg" alt="3.1"></a>
+			<p>Tras una intensa batalla, Shinji, Rei y Asuka, llegan a un asentamiento podblado por supervivientes. Aqui Rei descubre que hay vida... una vida fuera de NERV, pero esta no logra durar mucho tiempo. Shinji, al hablar con ella descubre la voluntad y madurez para enfrentar a su padre.</p>
+			<p>De regreso en la nave junto a Misato, toma curso hacia el Polo Sur, especificamente, el epicentro del Segundo Impacto. Asuka y Mari decienden con sus Evas, para evitar que Gendo reactive la Unidad-13; pero fracasan, Asuka muere y Mari queda casi fuera de combate. Pero Shinji logra convencer a Misato para volver a pilotear la Unidad-01.</p>
+			<p>Gracias a los esfuerzos de Shinji y el apoyo de Misato, se logra evitar otro Impacto, y Shinji se lo concede su deseo... Un mundo en el que todos sean felices... Un mundo sin Evas.</p>
+			<p class="letra__descripcion">"Yo no protejo nada... lo unico que hice fue destruirlo todo... no quiero hacer ¡No quiero hablar con andie! ¡Ni que nadie vena aqui! ¡SOLO QUIERO QUE ME DEJEN SOLO Y EN PAZ! ¡¿Por que todos... son tan amables conmigo?!" - "Porque nosotros te queremos... muchas gracias por haber habaldo conmigo"</p>
+			<p class="letra__descripcion">"¿Que pasa, Ayanami?" - "Queria cosechar el arroz... queria sostener a Tsubame de nuevo... queria estar... con el chico que me gusta... Adios"</p>
+			<p class="letra__descripcion">"Asuka, tu querias golpearme esa vez... porque no pude decidirme... no te salve, ni mate... No hice nada, solo me escape" - "Parece que si cambiaste un poco"</p>
+			<p class="letra__descripcion">"Escuchame Shinji... lo unico que puede hacer un hijo por su padre es abrazarlo, o sino, asesinarlo... es lo que dijo Kaji" - "Misato, pude conocer a Ryoji Kaji"</p>
+			<p class="letra__descripcion">"Ayanami" - "Ikari... lo siento, falle. Hice lo que pude pero volviste a pilotear un Eva" - "Descuida, gracias Ayanami. Me encargare de todo"</p>
+			<h4>Trailer</h4>
+				<video height="50%" width="50%" controls="" autoplay="" loop="" muted="">
+				<source src="Img/Evangelion_3.0+1.0_trailer.mp4" type="video/mp4">
+				</video>				
+	</div>
+</aside>
 </div>
 </body>
 </html>

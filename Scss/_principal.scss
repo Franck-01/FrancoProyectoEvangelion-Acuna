@@ -1,0 +1,39 @@
+.fondo{
+    background-repeat: no-repeat;
+    background-image: url("Img/fondo.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+.letra{
+    color: white;
+    font-size: 20px;
+    .letra__titulo{
+        border: 10px dashed black;
+        padding: 10px;
+        margin: 6%;	
+        background: rgb(0,0,0);
+        background: radial-gradient(circle, rgba(0,0,0,1) 10%, rgba(222,0,0,1) 24%, rgba(0,0,0,1) 27%, rgba(234,13,13,1) 37%, rgba(175,33,223,1) 43%, rgba(17,3,55,1) 48%, rgba(71,158,82,1) 53%, rgba(204,143,23,1) 59%, rgba(209,73,27,1) 65%, rgba(112,8,4,1) 70%, rgba(51,6,6,1) 74%, rgba(92,36,56,1) 77%, rgba(0,0,0,1) 82%);
+        font-size: 34px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .letra__titulo:hover{
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(222,0,0,1) 18%, rgba(229,242,0,1) 47%, rgba(29,117,215,1) 80%, rgba(0,0,0,1) 100%);
+        transition: all 500ms ease-out;
+        color: black;
+        border: 10px dashed white; 
+        text-transform: uppercase; 
+    }
+    .letra__descripcion{
+        font-size: 24px;
+        font-style: italic;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

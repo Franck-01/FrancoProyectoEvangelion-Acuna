@@ -1,0 +1,41 @@
+body{
+    padding: 10%;
+}
+img{
+    text-align: center;
+    height: 30%;
+    width: 80%;
+}
+.youtube{
+    text-align: center;
+    width: 41%;
+}
+video{
+	text-align: center;
+}
+.responsive{
+	width: 100%;
+	max-width: 100%;
+	margin: auto auto;
+}
+.detalles{
+	padding: 30px;
+	.detalles__transition{
+		transform: scale(1);
+	}
+	.detalles__transition:hover{
+		transform: scale(1.1);
+		transition: all 500ms ease-out;
+	}
+	.detalles__transform:hover{
+		transform: scale(1.1)
+	}	
+}
+a{
+    color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+a:hover{
+	color: black;
+}
