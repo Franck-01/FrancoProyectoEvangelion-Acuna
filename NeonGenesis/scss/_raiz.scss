@@ -244,3 +244,28 @@
 		}	
 	}
 }
+.neon{
+	p{
+		font-size: 20px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: bolder;
+		text-align: center;	
+	}
+	.neon__titulos{
+		font-size: 24px;
+		font-style: italic;
+		font-family: 'Roboto', sans-serif;
+		text-transform: uppercase;
+		border: 10px dashed black;
+		padding: 5px;
+		margin: 10px;
+		background: black;
+		background: radial-gradient(circle, black 48%, rgba(9, 6, 210, 0) 65%, #7e0202 84%);
+		text-align: center;
+	}
+	img{
+		text-align: center;
+		height: 30%;
+		width: 60%;
+	}
+}

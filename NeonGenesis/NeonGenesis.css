@@ -1,4 +1,3 @@
-/* line 2, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #principal .fondo {
   background-repeat: no-repeat;
   background-image: url("IMG/eva_fondo.png");
@@ -6,13 +5,11 @@
   background-size: cover;
 }
 
-/* line 8, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #principal .padre {
   color: white;
   font-weight: bolder;
 }
 
-/* line 11, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #principal .padre .padre__titulo {
   border: 10px dashed black;
   padding: 10px;
@@ -26,7 +23,6 @@
   text-align: center;
 }
 
-/* line 23, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #principal .padre .padre__titulo:hover {
   background: black;
   background: radial-gradient(circle, black 12%, #d20606 59%, rgba(0, 0, 0, 0) 100%);
@@ -35,14 +31,12 @@
   border: 10px dashed white;
 }
 
-/* line 30, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #principal .padre .padre__textos {
   font-size: 18px;
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
 }
 
-/* line 35, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #principal .padre .padre__descripcion {
   font-size: 24px;
   font-style: italic;
@@ -50,7 +44,6 @@
   text-transform: uppercase;
 }
 
-/* line 41, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #principal .padre .padre__linksEnlaces {
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
@@ -62,14 +55,12 @@
   color: white;
 }
 
-/* line 51, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #principal .padre .padre__linksEnlaces:hover {
   background: black;
   background: radial-gradient(circle, black 12%, #d20606 59%, rgba(0, 0, 0, 0) 100%);
   transition: all 500ms ease-out;
 }
 
-/* line 56, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #principal .padre .padre__tituloNetflix {
   font-size: 20px;
   font-family: 'Raleway', sans-serif;
@@ -77,7 +68,6 @@
   text-align: center;
 }
 
-/* line 62, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #principal .padre .padre__estilos {
   font-size: 20px;
   font-family: 'Raleway', sans-serif;
@@ -90,13 +80,11 @@
   text-align: center;
 }
 
-/* line 74, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #principal .imagen {
   height: 35%;
   width: 270px;
 }
 
-/* line 80, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #historia .fondo {
   background-image: url("IMG/nerv_fondo.png");
   background-size: cover;
@@ -105,12 +93,10 @@
   background-repeat: no-repeat;
 }
 
-/* line 87, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #historia .padre {
   color: white;
 }
 
-/* line 89, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #historia .padre .padre__titulos {
   border: 10px dashed none;
   padding: 5px;
@@ -121,14 +107,12 @@
   text-transform: uppercase;
 }
 
-/* line 98, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #historia .padre .padre__nervUno:hover {
   background: black;
   background: linear-gradient(90deg, black 12%, #001fff 50%, black 88%);
   transition: all 500ms ease-out;
 }
 
-/* line 103, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #historia .padre .padre__textos {
   font-size: 18px;
   font-family: 'Lato', sans-serif;
@@ -136,7 +120,6 @@
   font-weight: bold;
 }
 
-/* line 112, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #pilotomiembro .fondo {
   background-image: url("IMG/miembros_pilotos_fondo.gif");
   background-position: center top;
@@ -145,45 +128,38 @@
   background-attachment: fixed;
 }
 
-/* line 119, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #pilotomiembro .padre {
   color: white;
   font-size: 20px;
 }
 
-/* line 122, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #pilotomiembro .padre .padre__titular {
   font-size: 24px;
   font-family: 'Acme', sans-serif;
   text-align: center;
 }
 
-/* line 127, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #pilotomiembro .padre .padre__fontFamily {
   text-align: center;
   font-family: 'Acme', sans-serif;
 }
 
-/* line 130, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #pilotomiembro .padre .padre__fontFamily .padre__fontFamily--light {
   color: lightblue;
   text-align: center;
 }
 
-/* line 134, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #pilotomiembro .padre .padre__fontFamily .padre__fontFamily--dark {
   color: darkgreen;
   text-align: center;
 }
 
-/* line 139, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #pilotomiembro .padre .padre__text {
   text-align: center;
   font-family: 'Covered By Your Grace', cursive;
   color: yellow;
 }
 
-/* line 147, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #evas .fondo {
   background-repeat: no-repeat;
   background-image: url("IMG/evasUno_fondo.jpg");
@@ -192,7 +168,6 @@
   background-attachment: fixed;
 }
 
-/* line 154, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #evas .padre {
   font-weight: bolder;
   text-align: center;
@@ -201,7 +176,6 @@
   margin: 1px;
 }
 
-/* line 160, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #evas .padre .padre__titulos {
   color: white;
   border: 10px dashed none;
@@ -211,45 +185,37 @@
   background: linear-gradient(90deg, black 12%, #fd1d1d 50%, black 88%);
 }
 
-/* line 168, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #evas .padre .padre__titulos:hover {
   background: black;
   background: linear-gradient(90deg, black 12%, #001fff 50%, black 88%);
   transition: all 500ms ease-out;
 }
 
-/* line 173, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #evas .padre .padre__blue {
   color: blue;
 }
 
-/* line 176, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #evas .padre .padre__red {
   color: red;
 }
 
-/* line 179, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #evas .padre .padre__white {
   color: white;
 }
 
-/* line 183, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #evas .carousel {
   position: center;
 }
 
-/* line 186, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #evas .img {
   height: 10%;
   width: 80%;
 }
 
-/* line 190, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #evas img {
   margin: 1%;
 }
 
-/* line 195, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #angeles .fondo {
   background-image: url("IMG/reiAngel_Dos.jpg");
   background-size: 100%;
@@ -258,14 +224,12 @@
   background-attachment: fixed;
 }
 
-/* line 202, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #angeles .padre {
   color: black;
   text-align: center;
   line-height: 1.5;
 }
 
-/* line 206, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #angeles .padre .padre__tit {
   font-weight: bold;
   font-family: 'Bree Serif', serif;
@@ -273,7 +237,6 @@
   font-size: 26px;
 }
 
-/* line 212, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #angeles .padre .padre__titulo {
   border: 10px dashed black;
   padding: 10px;
@@ -284,7 +247,6 @@
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, white 50%);
 }
 
-/* line 221, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #angeles .padre .padre__titulo:hover {
   transition: all 500ms ease-out;
   color: white;
@@ -293,7 +255,6 @@
   background: linear-gradient(90deg, black 50%, rgba(255, 255, 255, 0) 100%);
 }
 
-/* line 228, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #angeles .padre .padre__text {
   margin: 40px;
   font-size: 20px;
@@ -301,7 +262,6 @@
   font-family: 'Nanum Gothic', sans-serif;
 }
 
-/* line 234, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #angeles .padre .padre__descrip {
   color: white;
   text-transform: uppercase;
@@ -311,12 +271,140 @@
   font-family: 'Shadows Into Light', cursive;
 }
 
-/* line 242, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_raiz.scss */
 #angeles .padre .padre__left {
   text-align: left;
 }
 
-/* line 2, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
+.neon p {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.neon .neon__titulos {
+  font-size: 24px;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  border: 10px dashed black;
+  padding: 5px;
+  margin: 10px;
+  background: black;
+  background: radial-gradient(circle, black 48%, rgba(9, 6, 210, 0) 65%, #7e0202 84%);
+  text-align: center;
+}
+
+.neon img {
+  text-align: center;
+  height: 30%;
+  width: 60%;
+}
+
+#rei .fondo {
+  background-image: url("IMG/reiAngel.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+#rei .padre {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 1px;
+  margin: 1px;
+  font-family: 'Crete Round', serif;
+  text-align: center;
+}
+
+#rei .padre .padre__encabezado:hover {
+  color: white;
+}
+
+#rei .padre .padre__textos:hover {
+  color: lightblue;
+}
+
+#asuka .fondo {
+  background-image: url("IMG/asukaSohryu_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#asuka .padre {
+  color: black;
+  font-size: 24px;
+  padding: 1px;
+  margin: 1px;
+  font-weight: bold;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: center;
+}
+
+#asuka .padre .padre__encabezado:hover {
+  color: white;
+}
+
+#asuka .padre .padre__textos:hover {
+  color: red;
+}
+
+#shinji .fondo {
+  background-image: url("IMG/ShinjiIkari_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#shinji .padre {
+  color: black;
+  font-size: 24px;
+  padding: 1px;
+  margin: 1px;
+  font-weight: bold;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+}
+
+#shinji .padre .padre__encabezado:hover {
+  color: white;
+}
+
+#shinji .padre .padre__textos:hover {
+  color: lightblue;
+}
+
+#kaworu .fondo {
+  background-image: url("IMG/KaworuNagisa_fondo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#kaworu .padre {
+  color: black;
+  padding: 1px;
+  margin: 1px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+#kaworu .padre .padre__encabezado:hover {
+  color: white;
+}
+
+#kaworu .padre .padre__textos:hover {
+  color: white;
+}
+
 #misato .fondo {
   background-image: url("IMG/MisatoKatsugari_fondo.jpg");
   background-size: cover;
@@ -325,7 +413,6 @@
   background-attachment: fixed;
 }
 
-/* line 9, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
 #misato .padre {
   color: black;
   padding: 1px;
@@ -336,17 +423,14 @@
   text-align: center;
 }
 
-/* line 17, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
 #misato .padre .padre__encabezado:hover {
   color: white;
 }
 
-/* line 20, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
 #misato .padre .padre__textos:hover {
   color: white;
 }
 
-/* line 26, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
 #ritsuko .fondo {
   background-image: url("IMG/RitsukoAkagi_fondo.jpg");
   background-size: cover;
@@ -355,7 +439,6 @@
   background-attachment: fixed;
 }
 
-/* line 33, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
 #ritsuko .padre {
   color: black;
   font-size: 24px;
@@ -366,17 +449,14 @@
   text-align: center;
 }
 
-/* line 41, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
 #ritsuko .padre .padre__encabezado:hover {
   color: white;
 }
 
-/* line 44, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
 #ritsuko .padre .padre__textos:hover {
   color: yellow;
 }
 
-/* line 50, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
 #kaji .fondo {
   background-image: url("IMG/RyojiKaji_fondo.jpg");
   background-size: cover;
@@ -385,7 +465,6 @@
   background-attachment: fixed;
 }
 
-/* line 57, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
 #kaji .padre {
   color: black;
   font-size: 24px;
@@ -396,17 +475,14 @@
   text-align: center;
 }
 
-/* line 65, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
 #kaji .padre .padre__encabezado:hover {
   color: white;
 }
 
-/* line 68, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
 #kaji .padre .padre__textos:hover {
   color: blue;
 }
 
-/* line 74, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
 #gendo .fondo {
   background-image: url("IMG/SEELE_fondo.jpg");
   background-attachment: fixed;
@@ -415,7 +491,6 @@
   background-repeat: no-repeat;
 }
 
-/* line 81, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_miembros.scss */
 #gendo .padre {
   color: white;
   font-size: 24px;
@@ -425,59 +500,49 @@
   font-family: 'Frank Ruhl Libre', serif;
 }
 
-/* line 1, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .flex {
   display: flex;
   padding: 10%;
   flex-wrap: wrap;
 }
 
-/* line 5, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .flex .flex div {
   width: 3%;
   margin: 6%;
 }
 
-/* line 10, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .responsive {
   width: 100%;
   max-width: 100%;
   margin: auto auto;
 }
 
-/* line 15, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .detalles {
   padding: 30px;
 }
 
-/* line 17, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .detalles .detalles__transition {
   transform: scale(1);
 }
 
-/* line 20, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .detalles .detalles__transition:hover {
   transform: scale(1.1);
   transition: all 500ms ease-out;
 }
 
-/* line 24, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .detalles .detalles__transform:hover {
   transform: scale(1.1);
 }
 
-/* line 28, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .center {
   text-align: center;
 }
 
-/* line 31, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 img {
   height: 170px;
   width: 270px;
 }
 
-/* line 35, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .inicio {
   font-size: 20px;
   color: lightblue;
@@ -487,13 +552,11 @@ img {
   text-transform: uppercase;
 }
 
-/* line 43, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .inicio:hover {
   color: white;
   border: 5px dashed white;
 }
 
-/* line 47, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 a {
   font-size: 20px;
   color: white;
@@ -503,27 +566,22 @@ a {
   text-transform: uppercase;
 }
 
-/* line 55, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 a:hover {
   font-size: 24px;
 }
 
-/* line 58, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 aside {
   text-align: right;
 }
 
-/* line 61, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 section {
   text-align: left;
 }
 
-/* line 64, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 header {
   text-align: center;
 }
 
-/* line 67, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 button {
   background-color: none;
   border: none;
@@ -537,7 +595,6 @@ button {
   font-weight: bolder;
 }
 
-/* line 79, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 button:hover {
   text-align: center;
   color: white;
@@ -547,7 +604,6 @@ button:hover {
   background: linear-gradient(0deg, #2225c3 0%, #7b13db 50%, #fd2d35 100%);
 }
 
-/* line 87, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 input {
   background-color: none;
   border: none;
@@ -561,7 +617,6 @@ input {
   font-weight: bolder;
 }
 
-/* line 99, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 input:hover {
   text-align: center;
   color: white;
@@ -572,7 +627,6 @@ input:hover {
   background: linear-gradient(0deg, #2225c3 0%, #7b13db 50%, #fd2d35 100%);
 }
 
-/* line 108, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .misato {
   height: 100vh;
   width: 100vw;
@@ -589,7 +643,6 @@ input:hover {
   color: #17a2b8;
 }
 
-/* line 122, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .misato .misato__fondo {
   background-image: url("IMG/Misato-.jpg");
   background-size: cover;
@@ -602,7 +655,6 @@ input:hover {
   padding: 22px;
 }
 
-/* line 133, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .misato .misato__titulo {
   font-size: 24px;
   font-weight: bold;
@@ -614,13 +666,11 @@ input:hover {
   text-transform: uppercase;
 }
 
-/* line 142, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .misato .misato__titulo .misato__titulo__info {
   font-size: 18px;
   text-align: center;
 }
 
-/* line 148, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .ritsuko {
   height: 100vh;
   width: 100vw;
@@ -637,7 +687,6 @@ input:hover {
   color: #d39e00;
 }
 
-/* line 162, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .ritsuko .ritsuko__fondo {
   background-image: url("IMG/Ritsuko-.jpg");
   background-size: cover;
@@ -650,7 +699,6 @@ input:hover {
   padding: 22px;
 }
 
-/* line 173, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .ritsuko .ritsuko__titulo {
   font-size: 24px;
   font-weight: bold;
@@ -662,13 +710,11 @@ input:hover {
   text-transform: uppercase;
 }
 
-/* line 182, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .ritsuko .ritsuko__titulo .ritsuko__titulo__info {
   font-size: 18px;
   text-align: left;
 }
 
-/* line 188, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .kaji {
   height: 100vh;
   width: 100vw;
@@ -685,7 +731,6 @@ input:hover {
   color: #04468f;
 }
 
-/* line 202, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .kaji .kaji__fondo {
   background-image: url("IMG/ryojiKaji-.jpg");
   background-size: cover;
@@ -698,7 +743,6 @@ input:hover {
   padding: 22px;
 }
 
-/* line 213, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .kaji .kaji__titulo {
   font-size: 24px;
   font-weight: bold;
@@ -710,13 +754,11 @@ input:hover {
   text-transform: uppercase;
 }
 
-/* line 222, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .kaji .kaji__titulo .kaji__titulo__info {
   font-size: 18px;
   text-align: right;
 }
 
-/* line 228, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .gendo {
   height: 100vh;
   width: 100vw;
@@ -733,7 +775,6 @@ input:hover {
   color: #ffffff;
 }
 
-/* line 242, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .gendo .gendo__fondo {
   background-image: url("IMG/gendoIkari-.gif");
   background-size: cover;
@@ -746,7 +787,6 @@ input:hover {
   padding: 22px;
 }
 
-/* line 253, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .gendo .gendo__titulo {
   font-size: 24px;
   font-weight: bold;
@@ -758,13 +798,11 @@ input:hover {
   text-transform: uppercase;
 }
 
-/* line 262, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .gendo .gendo__titulo .gendo__titulo__info {
   font-size: 18px;
   text-align: center;
 }
 
-/* line 268, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .rei {
   height: 100vh;
   width: 100vw;
@@ -781,7 +819,6 @@ input:hover {
   color: #05a790;
 }
 
-/* line 282, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .rei .rei__fondo {
   background-image: url("IMG/reiAyanami-.gif");
   background-size: cover;
@@ -794,7 +831,6 @@ input:hover {
   padding: 22px;
 }
 
-/* line 293, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .rei .rei__titulo {
   font-size: 24px;
   font-weight: bold;
@@ -806,13 +842,11 @@ input:hover {
   text-transform: uppercase;
 }
 
-/* line 302, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .rei .rei__titulo .rei__titulo__info {
   font-size: 18px;
   text-align: left;
 }
 
-/* line 308, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .asuka {
   height: 100vh;
   width: 100vw;
@@ -829,7 +863,6 @@ input:hover {
   color: #ff2300;
 }
 
-/* line 322, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .asuka .asuka__fondo {
   background-image: url("IMG/asukaLangley-.jpg");
   background-size: cover;
@@ -842,7 +875,6 @@ input:hover {
   padding: 22px;
 }
 
-/* line 333, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .asuka .asuka__titulo {
   font-size: 24px;
   font-weight: bold;
@@ -854,13 +886,11 @@ input:hover {
   text-transform: uppercase;
 }
 
-/* line 342, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .asuka .asuka__titulo .asuka__titulo__info {
   font-size: 18px;
   text-align: right;
 }
 
-/* line 348, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .shinji {
   height: 100vh;
   width: 100vw;
@@ -877,7 +907,6 @@ input:hover {
   color: #7345ff;
 }
 
-/* line 362, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .shinji .shinji__fondo {
   background-image: url("IMG/Shinji_Ikari-.jpg");
   background-size: cover;
@@ -890,7 +919,6 @@ input:hover {
   padding: 22px;
 }
 
-/* line 373, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .shinji .shinji__titulo {
   font-size: 24px;
   font-weight: bold;
@@ -902,13 +930,11 @@ input:hover {
   text-transform: uppercase;
 }
 
-/* line 382, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .shinji .shinji__titulo .shinji__titulo__info {
   font-size: 18px;
   text-align: center;
 }
 
-/* line 388, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .kaworu {
   height: 100vh;
   width: 100vw;
@@ -925,7 +951,6 @@ input:hover {
   color: #00b128;
 }
 
-/* line 402, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .kaworu .kaworu__fondo {
   background-image: url("IMG/kaworu-.gif");
   background-size: cover;
@@ -938,7 +963,6 @@ input:hover {
   padding: 22px;
 }
 
-/* line 413, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .kaworu .kaworu__titulo {
   font-size: 24px;
   font-weight: bold;
@@ -950,19 +974,16 @@ input:hover {
   text-transform: uppercase;
 }
 
-/* line 422, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .kaworu .kaworu__titulo .kaworu__titulo__info {
   font-size: 18px;
   text-align: center;
 }
 
-/* line 428, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .modal-active {
   visibility: visible;
   opacity: 1;
 }
 
-/* line 432, ../../Users/pca/Downloads/Sublime Text 3/las clases/GitHub/NeonGenesis/scss/_letra.scss */
 .carga {
   width: 100%;
   height: 100vh;
@@ -978,5 +999,3 @@ input:hover {
   left: 0;
   transition: all 1s ease-out 1s;
 }
-
-/*# sourceMappingURL=NeonGenesis.css.map */
