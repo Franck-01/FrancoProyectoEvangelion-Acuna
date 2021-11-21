@@ -245,6 +245,13 @@
 	}
 }
 .neon{
+	.neon__fondo{
+		background-image: url("IMG/muerte_fondo.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
 	p{
 		font-size: 20px;
 		font-family: 'Raleway', sans-serif;
