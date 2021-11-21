@@ -140,7 +140,14 @@ function activar() {
                         <p>Aqui es donde nuestro protagonista, Shinji Ikari, llega a NERV (organizacion paramiliar encargada de preservar el futuro de la humanidad), en el mismo dia que se enfrenta a un angel con la Unidad-01. Un bio mecha humanoides llamado Evangelion (acortado a EVA).</p>
                         <p>Con el avance de la historia Shinji va a ir interactuando con otros personajes, enfrentandose a situaciones que no solo le haran peligrar su vida, sino que lo haran cuestionarse su verdadera utilidad, ahora como el Tercer Niño Elegido, y piloto de Evangelion.</p>
                         <p>Conociendo a las otras pilotos, Rei Ayanami, la piloto de la Unidad-00 y la Asuka Landley Sohru, la piloto de la Unidad-02</p>
-                        <input id="ocultar" type="button" value="Cerrar ANIME">`);
+                        <h2 class="neon__titulos">The End Of Evangelion</h2>
+                        <div>
+                        <img src="IMG/the_end.jpg" />
+                        <div id="despliega" class="col">
+                        <input id="despliega" type="button" value="Pelicula" onclick="otra();" />
+                        </div>
+                        </div>
+                        <input id="ocultar" type="button" value="cerrar">`);
     $('#visualizar').click(function() {
         $('#right').slideDown(1500)
     })
@@ -149,16 +156,20 @@ function activar() {
     })
 }
 function otra() {
-    $("#despliega").append(`<p>Al acabar con los angeles, SEELE le envia al ejercito japones a que detenga a NERV, con la falsa escusa de una sublemacion. Los pilotos se esconden, Asuka en su Eva, Shinji intenta escapar junto a Misato de los intrusos y Gendo resguarda a Rei.</p>
-                        <p>Asuka logra activar su unidad Evangelion, y se enfrenta a los enemigos en la superficie. Descubriendo que los oponentes tienen unidades evangelion de produccion en masa, Evas fisicamente debiles, pero resistentes a los ataques. Misato muere, pero lograr cumplir su objetivo, que Shinji logre subir al Eva-01. Solo para contemplar la destruccion del Eva-02... con Asuka dentro de él</p>
-                        <p>Rei, en un acto de traicion contra Gendo Ikari, logra fucionarse con el feto de Adam(su unica forma fisica) y el cuerpo dormido de Lilith... provocando la union prohibida entre las dos semillas e iniciando el Tercer Impacto. Eliminando las barreras fisicas de las almas, uniendolas a todas en una sola.</p>
-                        <input id="cierre" type="button" value="Cerrar PELICULA" onclick="otra();" />`);
-    $('#ver').click(function() {
-        $('#despliega').slideDown(1500)
-    })
-    $("#cierre").click(function() {
-        $("#despliega").slideUp(1500)
-    }) 
+    const neonGenesis = document.getElementById("despliega");
+    const serie = document.createElement("div");
+
+    const anime = {
+        item1: "Al acabar con los angeles, SEELE le envia al ejercito japones a que detenga a NERV, con la falsa escusa de una sublemacion. Los pilotos se esconden, Asuka en su Eva, Shinji intenta escapar junto a Misato de los intrusos y Gendo resguarda a Rei.",
+        item2: "Asuka logra activar su unidad Evangelion, y se enfrenta a los enemigos en la superficie. Descubriendo que los oponentes tienen unidades evangelion de produccion en masa, Evas fisicamente debiles, pero resistentes a los ataques. Misato muere, pero lograr cumplir su objetivo, que Shinji logre subir al Eva-01. Solo para contemplar la destruccion del Eva-02... con Asuka dentro de él",
+        item3: "Rei, en un acto de traicion contra Gendo Ikari, logra fucionarse con el feto de Adam(su unica forma fisica) y el cuerpo dormido de Lilith... provocando la union prohibida entre las dos semillas e iniciando el Tercer Impacto. Eliminando las barreras fisicas de las almas, uniendolas a todas en una sola."
+    };
+    serie.innerHTML = `
+                    <p>${anime.item1}</p>
+                    <p>${anime.item2}</p>
+                    <p>${anime.item3}</p>
+                    `;
+    neonGenesis.appendChild(serie); 
 }
 nerv()
 activar()
